@@ -3,65 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Агентство недвижимости «Твой риэлтер» в Мозыре</title>
+    <title>Твой риэлтер — продажа недвижимости в Мозыре и области</title>
     <meta
       name="description"
-      content="Профессиональная риэлтерская помощь при продаже, покупке и обмене недвижимости в Мозыре и области."
+      content="Агентство недвижимости «Твой риэлтер»: продадим, купим, обменяем или оценим недвижимость в Мозыре, Калинковичах и Гомельской области. Бесплатная оценка и юридическое сопровождение."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="АГЕНТСТВО ТВОЙ РИЭЛТЕР">
+      <a class="brand" href="#top" aria-label="ТР | Твой риэлтер">
         <span class="brand-mark">ТР</span>
-        <span>АГЕНТСТВО ТВОЙ РИЭЛТЕР</span>
+        <span class="brand-text">Твой риэлтер</span>
       </a>
+
       <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-toggle>
         <span></span>
         <span></span>
         <span></span>
       </button>
+
       <nav class="nav" aria-label="Основное меню">
         <a href="#services">Услуги</a>
         <a href="#process">Этапы работы</a>
         <a href="#valuation">Оценка онлайн</a>
+        <a href="#benefits">Преимущества</a>
         <a href="#reviews">Отзывы</a>
         <a href="#faq">FAQ</a>
         <a href="#contacts">Контакты</a>
       </nav>
+
       <div class="header-actions">
         <a class="phone-link" href="tel:+375291451071">+375 29 145-10-71</a>
-        <button class="btn btn-light btn-small" type="button" data-show-phone>Показать телефон</button>
-        <a class="btn btn-primary btn-small" href="#consultation">ЗАДАТЬ ВОПРОС</a>
+        <button class="btn btn-ghost btn-small" type="button" data-open-modal data-modal-title="Задать вопрос">Задать вопрос</button>
+        <button class="btn btn-primary btn-small" type="button" data-open-modal data-modal-title="Заказать звонок">Заказать звонок</button>
       </div>
     </header>
 
     <main id="top">
-      <section class="hero section-bleed">
-        <div class="hero-inner container">
-          <div class="hero-content">
-            <p class="eyebrow">ПОЛУЧАЙТЕ МАКСИМАЛЬНУЮ ВЫГОДУ ОТ ПРОДАЖИ КВАРТИРЫ С НАМИ!</p>
-            <h1>Профессиональная риэлтерская помощь при продаже, покупке и обмене недвижимости в Мозыре и области</h1>
-            <ul class="hero-benefits">
-              <li>Определим рыночную стоимость</li>
-              <li>Продадим по максимальной цене</li>
-              <li>Своя база покупателей</li>
-              <li>Работаем даже с проблемными объектами</li>
-              <li>Продажа от двух дней</li>
-              <li>Полное юридическое сопровождение</li>
-              <li>Полный комплекс услуг</li>
-              <li>Надежный партнер</li>
-            </ul>
-            <p class="hero-note">Наша цель — довольные клиенты от риэлтерских услуг первоклассного качества!</p>
-            <div class="hero-cta">
-              <p>Узнайте стоимость и срок продажи Вашей недвижимости в течение 5 минут!</p>
-              <a class="btn btn-primary" href="#valuation">УЗНАТЬ СТОИМОСТЬ</a>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Мозырь, Калинковичи и Гомельская область</p>
+            <h1>Продадим вашу недвижимость в Мозыре быстро, выгодно и безопасно</h1>
+            <p class="hero-lead">
+              Оценим объект, подготовим рекламу, найдём покупателя, проведём переговоры и сопроводим сделку до передачи ключей.
+            </p>
+
+            <div class="badge-row" aria-label="Ключевые преимущества">
+              <span>Бесплатная оценка</span>
+              <span>Без предоплаты</span>
+              <span>Юридическое сопровождение</span>
+              <span>Своя база покупателей</span>
+              <span>Работаем с проблемными объектами</span>
+            </div>
+
+            <div class="hero-cta-row">
+              <a class="btn btn-primary" href="#valuation">Оценить объект</a>
+              <button class="btn btn-light" type="button" data-open-modal data-modal-title="Заказать звонок">Заказать звонок</button>
+            </div>
+          </div>
+
+          <div class="hero-panel reveal">
+            <form class="lead-card" data-form data-form-name="hero-valuation">
+              <p class="mini-label">Бесплатная оценка</p>
+              <h2>Узнайте стоимость и срок продажи за 5 минут</h2>
+              <label>
+                <span>Имя</span>
+                <input type="text" name="name" placeholder="Ваше имя" required />
+              </label>
+              <label>
+                <span>Телефон</span>
+                <input type="tel" name="phone" placeholder="+375 (__) ___-__-__" required />
+              </label>
+              <label class="check">
+                <input type="checkbox" name="agreement" required />
+                <span>Согласен на обработку персональных данных</span>
+              </label>
+              <button class="btn btn-primary" type="submit">Узнать стоимость</button>
+              <p class="form-success" role="status" hidden>Спасибо. Мы свяжемся с вами и подготовим оценку.</p>
+            </form>
+
+            <article class="object-card" aria-label="Визуальная карточка объекта">
+              <div class="object-visual">
+                <div class="object-tag">2-комнатная квартира</div>
+              </div>
+              <div class="object-info">
+                <div>
+                  <span>Ориентир</span>
+                  <strong>Мозырь, центр</strong>
+                </div>
+                <div>
+                  <span>Стратегия</span>
+                  <strong>Цена + реклама + показы</strong>
+                </div>
+              </div>
+            </article>
+
+            <div class="stats-grid">
+              <div><strong>120+</strong><span>сделок за прошлый год</span></div>
+              <div><strong>50+</strong><span>актуальных заявок покупателей</span></div>
+              <div><strong>от 2 дней</strong><span>срок продажи</span></div>
+              <div><strong>0 BYN</strong><span>предоплата</span></div>
             </div>
           </div>
         </div>
@@ -69,534 +118,461 @@
 
       <section class="section services" id="services">
         <div class="container">
-          <div class="section-head">
-            <p class="eyebrow">РИЭЛТЕРСКИЕ УСЛУГИ</p>
-            <h2>РИЭЛТЕРСКИЕ УСЛУГИ</h2>
-            <p>Наше агентство - это надежный спутник и помощник в любых операциях с недвижимостью как для многих жителей Мозыря, так и для жителей прилегающих к нему областей.</p>
-            <a class="btn btn-secondary" href="#consultation">Оставить заявку</a>
+          <div class="section-head reveal">
+            <p class="eyebrow">Услуги</p>
+            <h2>Риэлтерские услуги для частных лиц и бизнеса</h2>
+            <p>Берём на себя оценку, продвижение, переговоры, документы и юридическую безопасность сделки.</p>
           </div>
 
           <div class="service-grid">
-            <article class="card service-card">
-              <h3>ЧАСТНЫМ ЛИЦАМ</h3>
+            <article class="service-card reveal">
+              <span class="card-icon">01</span>
+              <h3>Частным лицам</h3>
+              <p>Поможем продать, купить или обменять квартиру, дом, дачу, участок или долю.</p>
               <ul>
-                <li>Продажа и аренда квартир</li>
-                <li>Продажа домов, дач и земельных участков</li>
+                <li>Продажа квартир</li>
+                <li>Покупка квартир</li>
+                <li>Обмен недвижимости</li>
+                <li>Продажа домов, дач и участков</li>
                 <li>Междугородние сделки</li>
                 <li>Юридическое сопровождение</li>
               </ul>
-              <a class="card-link" href="#consultation">Получить консультацию</a>
+              <button class="text-link" type="button" data-open-modal data-modal-title="Консультация для частного лица">Получить консультацию</button>
             </article>
-            <article class="card service-card">
-              <h3>ЮРИДИЧЕСКИМ ЛИЦАМ:</h3>
+
+            <article class="service-card reveal">
+              <span class="card-icon">02</span>
+              <h3>Юридическим лицам</h3>
+              <p>Работаем с коммерческими объектами, арендой и сделками для бизнеса.</p>
               <ul>
-                <li>Продажа и аренда коммерческой недвижимости</li>
+                <li>Продажа коммерческой недвижимости</li>
+                <li>Аренда коммерческих помещений</li>
                 <li>Информация для инвесторов</li>
-                <li>Информация для банков</li>
+                <li>Сопровождение сделок для бизнеса</li>
               </ul>
-              <a class="card-link" href="#consultation">Получить консультацию</a>
+              <button class="text-link" type="button" data-open-modal data-modal-title="Консультация для бизнеса">Получить консультацию</button>
             </article>
-            <article class="card service-card">
-              <h3>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ:</h3>
+
+            <article class="service-card reveal">
+              <span class="card-icon">03</span>
+              <h3>Дополнительные услуги</h3>
+              <p>Разбираем сложные ситуации и помогаем подготовить объект к безопасной продаже.</p>
               <ul>
-                <li>Продажа и аренда квартир</li>
-                <li>Продажа домов, дач и земельных участков</li>
-                <li>Междугородние сделки</li>
-                <li>Юридическое сопровождение</li>
+                <li>Снятие обременений</li>
+                <li>Работа с арестами и запретами</li>
+                <li>Срочный выкуп</li>
+                <li>Подготовка документов</li>
+                <li>Консультации по сложным объектам</li>
               </ul>
-              <a class="card-link" href="#consultation">Получить консультацию</a>
+              <button class="text-link" type="button" data-open-modal data-modal-title="Консультация по сложному объекту">Получить консультацию</button>
             </article>
-            <article class="card service-card">
-              <h3>СНЯТИЕ ЛЮБЫХ ОБРЕМЕНЕНИЙ</h3>
-              <p>Оказываем консультации по вопросам снятия следующих видов обременений:</p>
+
+            <article class="service-card service-card-accent reveal">
+              <span class="card-icon">04</span>
+              <h3>Срочный выкуп</h3>
+              <p>Когда важна скорость: оценим объект, предложим решение и проведём сделку под ключ.</p>
               <ul>
-                <li>Обременение после погашения ипотеки</li>
-                <li>Обременения по кредиту</li>
-                <li>Арест на квартиру (включая снятие квартиры с ареста в суде или ОПИ)</li>
-                <li>Запрет на регистрационные действия с недвижимостью</li>
+                <li>До 90% от рыночной стоимости</li>
+                <li>Помощь с долгами и обременениями</li>
+                <li>Быстрое оформление</li>
+                <li>Сделка под ключ</li>
               </ul>
-              <a class="card-link" href="#consultation">Получить консультацию</a>
-            </article>
-            <article class="card service-card service-card-wide">
-              <h3>СРОЧНЫЙ ВЫКУП</h3>
-              <p>Получайте до 90% от реальной рыночной цены квартиры за несколько дней, а не 97% от заведомо заниженной оценщиком. Оформлением документов занимается «Твой риэлтер». Непогашенные приватизации, долги, исполнительные листы, аресты, запреты на продажу «льготного» жилья» — для нас нет нерешаемых задач! Займёмся всем «под ключ».</p>
-              <a class="card-link" href="#valuation">Рассчитать стоимость</a>
+              <button class="text-link" type="button" data-open-modal data-modal-title="Срочный выкуп недвижимости">Получить консультацию</button>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section trust-block">
-        <div class="container split-panel">
-          <div>
-            <p class="eyebrow">Работаем</p>
-            <h2>без предоплаты</h2>
+      <section class="section benefits" id="benefits">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Преимущества</p>
+            <h2>Почему с нами выгоднее</h2>
           </div>
-          <div class="trust-copy">
-            <p>Мы хотим изменить рынок недвижимости и поднять уровень сервиса и внимания к каждому клиенту.</p>
-            <p>Для нас важен принцип открытости и Ваши интересы для нас на первом месте. Мы понимаем, что работаем не зря, когда видим как улучшается жизнь и сбываются мечты наших клиентов!</p>
+          <div class="benefit-grid">
+            <article class="benefit-card reveal"><span>01</span><h3>Бесплатно определим рыночную стоимость</h3></article>
+            <article class="benefit-card reveal"><span>02</span><h3>Продадим по максимальной цене</h3></article>
+            <article class="benefit-card reveal"><span>03</span><h3>Своя база покупателей</h3></article>
+            <article class="benefit-card reveal"><span>04</span><h3>Работаем с проблемными объектами</h3></article>
+            <article class="benefit-card reveal"><span>05</span><h3>Продажа от 2 дней</h3></article>
+            <article class="benefit-card reveal"><span>06</span><h3>Полное юридическое сопровождение</h3></article>
+            <article class="benefit-card reveal"><span>07</span><h3>Без предоплаты</h3></article>
+            <article class="benefit-card reveal"><span>08</span><h3>Полный комплекс услуг под ключ</h3></article>
           </div>
         </div>
       </section>
 
-      <section class="section it-section">
-        <div class="container split-panel">
-          <div>
-            <p class="eyebrow">Мы — IT-агентство недвижимости</p>
-            <h2>Мы — IT-агентство недвижимости</h2>
+      <section class="section valuation" id="valuation">
+        <div class="container quiz-layout">
+          <div class="quiz-copy reveal">
+            <p class="eyebrow">Оценка онлайн</p>
+            <h2>Узнайте стоимость недвижимости за 5 минут</h2>
+            <p>Ответьте на несколько вопросов — специалист рассчитает ориентировочную стоимость и свяжется с вами удобным способом.</p>
+            <div class="callout">
+              <strong>Что вы получите</strong>
+              <span>Диапазон цены, срок продажи и список шагов для подготовки объекта.</span>
+            </div>
           </div>
-          <p>Создаем уникальные IT-решения, которые помогают команде работать эффективнее</p>
-        </div>
-      </section>
 
-      <section class="section form-section" id="valuation">
-        <div class="container form-layout">
-          <div class="form-copy">
-            <p class="eyebrow">УЗНАЙТЕ СТОИМОСТЬ КВАРТИРЫ</p>
-            <h2>УЗНАЙТЕ СТОИМОСТЬ КВАРТИРЫ</h2>
-            <p>Ответьте на несколько простых вопросов и получите информацию по стоимости Вашей квартиры удобным для Вас способом!</p>
-          </div>
-          <form class="card form-card" method="post">
-            <label>
-              <span>Состояние ремонта в Вашей квартире?</span>
-              <select name="repair_condition">
-                <option value="">Выберите из списка</option>
-                <option>Без ремонта</option>
-                <option>Косметический</option>
-                <option>Евроремонт</option>
-                <option>Современный</option>
-                <option>Дизайнерский (премиальный)</option>
-              </select>
-            </label>
-            <label>
-              <span>Сколько комнат в Вашей квартире?</span>
-              <select name="rooms">
-                <option value="">Выберите из списка</option>
-                <option>Студия</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 и более</option>
-              </select>
-            </label>
-            <label>
-              <span>На каком этаже расположена квартира?</span>
-              <select name="floor">
-                <option value="">Выберите из списка</option>
-                <option>1 этаж</option>
-                <option>2-4 этаж</option>
-                <option>5-9 этаж</option>
-                <option>10 этаж и выше</option>
-              </select>
-            </label>
-            <label>
-              <span>Где территориально располагается квартира?</span>
-              <select name="location">
-                <option value="">Выберите из списка</option>
-                <option>Мозырь</option>
-                <option>Калинковичи</option>
-                <option>Другое</option>
-              </select>
-            </label>
-            <label>
-              <span>Куда отправить результаты?</span>
-              <select name="contact_method">
-                <option value="">Выберите из списка</option>
-                <option>Viber</option>
-                <option>Telegram</option>
-                <option>WhatsApp</option>
-                <option>Перезвонить</option>
-              </select>
-            </label>
-            <label>
-              <span>Отправим результаты на указанный номер</span>
-              <input type="tel" name="phone" placeholder="+375 (29) ___-__-__" />
-            </label>
-            <button class="btn btn-primary" type="submit">УЗНАТЬ СТОИМОСТЬ</button>
-            <p class="agreement">Нажимая «УЗНАТЬ СТОИМОСТЬ», даю согласие на обработку персональной информации</p>
-            <a class="details-link" href="#">Подробнее</a>
+          <form class="quiz-card reveal" data-quiz data-form-name="valuation-quiz">
+            <div class="quiz-top">
+              <span data-quiz-step-label>Шаг 1 из 5</span>
+              <div class="progress"><span data-progress></span></div>
+            </div>
+
+            <div class="quiz-step active" data-step="0">
+              <h3>Что хотите оценить?</h3>
+              <div class="option-grid">
+                <label><input type="radio" name="property" value="Квартира" required /> <span>Квартира</span></label>
+                <label><input type="radio" name="property" value="Комната / доля" /> <span>Комната / доля</span></label>
+                <label><input type="radio" name="property" value="Дом / коттедж" /> <span>Дом / коттедж</span></label>
+                <label><input type="radio" name="property" value="Участок" /> <span>Участок</span></label>
+                <label><input type="radio" name="property" value="Дача" /> <span>Дача</span></label>
+                <label><input type="radio" name="property" value="Гараж" /> <span>Гараж</span></label>
+                <label><input type="radio" name="property" value="Коммерческий объект" /> <span>Коммерческий объект</span></label>
+                <label><input type="radio" name="property" value="Другое" /> <span>Другое</span></label>
+              </div>
+            </div>
+
+            <div class="quiz-step" data-step="1">
+              <h3>Сколько комнат?</h3>
+              <div class="option-grid option-grid-compact">
+                <label><input type="radio" name="rooms" value="Студия" required /> <span>Студия</span></label>
+                <label><input type="radio" name="rooms" value="1" /> <span>1</span></label>
+                <label><input type="radio" name="rooms" value="2" /> <span>2</span></label>
+                <label><input type="radio" name="rooms" value="3" /> <span>3</span></label>
+                <label><input type="radio" name="rooms" value="4" /> <span>4</span></label>
+                <label><input type="radio" name="rooms" value="5 и более" /> <span>5 и более</span></label>
+              </div>
+            </div>
+
+            <div class="quiz-step" data-step="2">
+              <h3>Площадь объекта</h3>
+              <label>
+                <span>Площадь в м²</span>
+                <input type="number" name="area" min="1" placeholder="Например, 54" required />
+              </label>
+            </div>
+
+            <div class="quiz-step" data-step="3">
+              <h3>Где находится объект?</h3>
+              <div class="option-grid">
+                <label><input type="radio" name="city" value="Мозырь" required /> <span>Мозырь</span></label>
+                <label><input type="radio" name="city" value="Калинковичи" /> <span>Калинковичи</span></label>
+                <label><input type="radio" name="city" value="Петриков" /> <span>Петриков</span></label>
+                <label><input type="radio" name="city" value="Гомель" /> <span>Гомель</span></label>
+                <label><input type="radio" name="city" value="Другой город" /> <span>Другой город</span></label>
+              </div>
+              <label>
+                <span>Адрес или район</span>
+                <input type="text" name="address" placeholder="Улица, район или ориентир" required />
+              </label>
+            </div>
+
+            <div class="quiz-step" data-step="4">
+              <h3>Куда отправить результат?</h3>
+              <div class="option-grid option-grid-compact">
+                <label><input type="radio" name="contact_method" value="Перезвонить" required /> <span>Перезвонить</span></label>
+                <label><input type="radio" name="contact_method" value="Viber" /> <span>Viber</span></label>
+                <label><input type="radio" name="contact_method" value="Telegram" /> <span>Telegram</span></label>
+                <label><input type="radio" name="contact_method" value="WhatsApp" /> <span>WhatsApp</span></label>
+              </div>
+              <div class="form-two">
+                <label>
+                  <span>Имя</span>
+                  <input type="text" name="name" placeholder="Ваше имя" required />
+                </label>
+                <label>
+                  <span>Телефон</span>
+                  <input type="tel" name="phone" placeholder="+375 (__) ___-__-__" required />
+                </label>
+              </div>
+              <label class="check">
+                <input type="checkbox" name="agreement" required />
+                <span>Согласен на обработку персональных данных</span>
+              </label>
+            </div>
+
+            <p class="form-error" data-quiz-error role="alert" hidden>Заполните обязательные поля шага.</p>
+            <p class="form-success" data-quiz-success role="status" hidden>Спасибо. Данные получены, специалист подготовит оценку.</p>
+
+            <div class="quiz-actions">
+              <button class="btn btn-light" type="button" data-prev disabled>Назад</button>
+              <button class="btn btn-primary" type="button" data-next>Далее</button>
+              <button class="btn btn-primary" type="submit" data-submit hidden>Получить оценку</button>
+            </div>
           </form>
         </div>
       </section>
 
       <section class="section process" id="process">
         <div class="container">
-          <div class="section-head">
-            <p class="eyebrow">КАК УСТРОЕН ПРОЦЕСС?</p>
-            <h2>КАК УСТРОЕН ПРОЦЕСС?</h2>
-            <p>Продайте свою недвижимость без лишних хлопот: 7 эффективных шагов с нашим агентством!</p>
-            <p>Все заботы по продаже, обмену и покупке недвижимости – организацию фото- и видео-съемки, виртуального тура, рекламу, активный поиск покупателей, бесконечный поток звонков, показов, переговоров, согласование выгодных финансовых и юридических условий, подготовку и проведение сделки – мы возьмем в свои руки!</p>
+          <div class="section-head reveal">
+            <p class="eyebrow">Процесс</p>
+            <h2>Как устроен процесс продажи</h2>
           </div>
-          <div class="process-grid">
-            <article class="card step-card">
-              <span>1</span>
-              <h3>ШАГ 1:</h3>
-              <h4>БЕСПЛАТНАЯ КОНСТУЛЬТАЦИЯ</h4>
-              <p>Вы получите детальную консультацию в удобное для Вас время: по телефону, в любом из наших офисов в Мозыре, Речице, Гомеле или с выездом специалиста на дом.</p>
-              <p>Это поможет определить наилучшие решения именно в Вашей ситуации.</p>
-            </article>
-            <article class="card step-card">
-              <span>2</span>
-              <h3>ШАГ 2:</h3>
-              <h4>ОПРЕДЕЛЕНИЕ СТОИМОСТИ</h4>
-              <p>Риэлтер выедет к Вам на объект и поможет определить его стоимость. Мы предоставим Вам информацию о рыночных тенденциях и о ценах прошедших сделок на аналогичные квартиры.</p>
-              <p>Грамотно установленная цена = выгодная продажа!</p>
-            </article>
-            <article class="card step-card">
-              <span>3</span>
-              <h3>ШАГ 3:</h3>
-              <h4>ЗАКЛЮЧЕНИЕ ДОГОВОРА</h4>
-              <p>С момента заключения договора на оказание услуг мы берем на себя обязательства по решению Вашего вопроса. Конфиденциальность и безопасность – обязательные условия договора.</p>
-              <p>Мы работаем без предоплат! Вы платите только за результат. Оплата услуг происходит по тарифам, утвержденных законодательством.</p>
-              <p>Договор - гарантия Вашей безопасности и нашей ответственности.</p>
-            </article>
-            <article class="card step-card">
-              <span>4</span>
-              <h3>ШАГ 4:</h3>
-              <h4>СТАРТ ПРОДАЖ</h4>
-              <p>Персональный риэлтер предложит Вашу недвижимость потенциальным покупателям еще до запуска рекламы. Сегодня в нашей базе более 50+ актуальных заявок на покупку.</p>
-              <p>Ваш покупатель уже у нас в офисе!</p>
-            </article>
-            <article class="card step-card">
-              <span>5</span>
-              <h3>ШАГ 5:</h3>
-              <h4>ЗАПУСК РЕКЛАМЫ</h4>
-              <p>Специальная, широкая и качественная реклама появится на самых посещаемых ресурсах о недвижимости в день заключения договора.</p>
-              <p>Специалисты компании создадут видео, фото- и виртуальный тур по вашему объекту недвижимости.</p>
-              <p>Для Вас - никаких дополнительных расходов на рекламу!</p>
-            </article>
-            <article class="card step-card">
-              <span>6</span>
-              <h3>ШАГ 6:</h3>
-              <h4>ПЕРЕГОВОРЫ И ПОКАЗ ОБЪЕКТА</h4>
-              <p>30 - 50 телефонных переговоров в месяц и все показы, которые нужны для продажи недвижимости, Ваш персональный риэлтер – опытный продавец - сделает за Вас.</p>
-              <p>Знание агентом особенностей Вашего района поможет презентовать объект покупателям.</p>
-              <p>Вы всегда будете знать о результатах переговоров и показов Вашей недвижимости.</p>
-            </article>
-            <article class="card step-card step-card-wide">
-              <span>7</span>
-              <h3>ШАГ 7:</h3>
-              <h4>ПРОВЕДЕНИЕ СДЕЛКИ</h4>
-              <p>Мы будем представлять Ваши интересы в согласовании условий сделки. Поможем организовать расчеты и передачу недвижимости.</p>
-              <p>Учет всех нюансов, внимание к документам, безопасность расчетов и конфиденциальность – все это залог спокойствия при продаже и в дальнейшем!</p>
-            </article>
+          <div class="timeline">
+            <article class="timeline-card reveal"><span>1</span><h3>Бесплатная консультация</h3><p>Разбираем вашу ситуацию, цель, сроки и особенности объекта.</p></article>
+            <article class="timeline-card reveal"><span>2</span><h3>Определение стоимости</h3><p>Анализируем рынок, похожие сделки и потенциал объекта.</p></article>
+            <article class="timeline-card reveal"><span>3</span><h3>Заключение договора</h3><p>Фиксируем условия работы, ответственность и юридическую безопасность.</p></article>
+            <article class="timeline-card reveal"><span>4</span><h3>Подготовка объекта к продаже</h3><p>Готовим фото, описание, рекомендации и стратегию продвижения.</p></article>
+            <article class="timeline-card reveal"><span>5</span><h3>Запуск рекламы</h3><p>Размещаем объект на площадках и используем базу покупателей.</p></article>
+            <article class="timeline-card reveal"><span>6</span><h3>Показы и переговоры</h3><p>Берём на себя звонки, показы, аргументацию и переговоры.</p></article>
+            <article class="timeline-card reveal"><span>7</span><h3>Проведение сделки</h3><p>Готовим документы, сопровождаем расчеты и передачу объекта.</p></article>
           </div>
         </div>
       </section>
 
-      <section class="section principles">
+      <section class="section marketing">
+        <div class="container marketing-grid">
+          <div class="reveal">
+            <p class="eyebrow">IT-агентство недвижимости</p>
+            <h2>Мы используем технологии, рекламу и аналитику, чтобы продавать быстрее</h2>
+            <div class="feature-list">
+              <article><h3>Анализ рынка и похожих объектов</h3><p>Сравниваем цены, сроки экспозиции и спрос по локации.</p></article>
+              <article><h3>Рекламная стратегия</h3><p>Подбираем площадки, аудитории и формат подачи объекта.</p></article>
+              <article><h3>Фото, видео и продающее описание</h3><p>Упаковываем объект так, чтобы он выделялся среди похожих предложений.</p></article>
+              <article><h3>Продвижение на онлайн-площадках</h3><p>Контролируем показы, звонки и реакцию покупателей.</p></article>
+              <article><h3>База покупателей</h3><p>Сразу предлагаем объект людям, которые уже ищут недвижимость.</p></article>
+              <article><h3>Отчетность по показам и звонкам</h3><p>Вы понимаете, что происходит с продажей каждую неделю.</p></article>
+            </div>
+          </div>
+
+          <div class="dashboard-card reveal" aria-label="Дашборд продвижения объекта">
+            <div class="dashboard-head">
+              <span>Кампания объекта</span>
+              <strong>Активно</strong>
+            </div>
+            <div class="metric"><span>Просмотры объявления</span><strong>8 420</strong></div>
+            <div class="metric"><span>Входящие звонки</span><strong>64</strong></div>
+            <div class="metric"><span>Показы</span><strong>18</strong></div>
+            <div class="metric"><span>Заинтересованные покупатели</span><strong>9</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section problems">
         <div class="container">
-          <div class="section-head">
-            <p class="eyebrow">НАШИ ПРИНЦИПЫ РАБОТЫ</p>
-            <h2>НАШИ ПРИНЦИПЫ РАБОТЫ</h2>
-            <p>Наша цель не просто продать, а сделать это максимально выгодно и безопасно!</p>
+          <div class="section-head reveal">
+            <p class="eyebrow">Сложные объекты</p>
+            <h2>Поможем даже со сложной недвижимостью</h2>
+            <p>Разберём ограничения, документы, долги и возможные сценарии продажи без лишнего давления.</p>
           </div>
-          <div class="principles-grid">
-            <article class="card">
-              <h3>Индивидуальный подход</h3>
-              <p>Разработка оптимальной стратегии продажи, подготовку маркетинговых материалов, организацию показов и встреч с потенциальными покупателями, а также подготовку всех необходимых документов для сделки.</p>
-            </article>
-            <article class="card">
-              <h3>Безопасность на первом месте</h3>
-              <p>Мы гарантируем безопасность вашей сделки на каждом этапе. Ваши интересы - наш приоритет.</p>
-            </article>
-            <article class="card">
-              <h3>Преимущества договора</h3>
-              <p>Заключение эксклюзивного договора с нашим агентством обеспечивает вам безопасность, экономию времени и возможность использовать максимальное количество рекламных каналов.</p>
-            </article>
-            <article class="card">
-              <h3>Юридическая поддержка</h3>
-              <p>Наши эксперты готовы предоставить вам профессиональную консультацию и обеспечить юридическую поддержку на всех этапах сделки, гарантируя вам покой и уверенность в выборе.</p>
-            </article>
+          <div class="pill-grid reveal">
+            <span>Арест квартиры</span>
+            <span>Запрет на регистрационные действия</span>
+            <span>Обременение после ипотеки</span>
+            <span>Долги</span>
+            <span>Исполнительные листы</span>
+            <span>Непогашенная приватизация</span>
+            <span>Срочная продажа</span>
+            <span>Обмен с доплатой</span>
           </div>
-          <a class="btn btn-primary" href="#final-request">Заказать звонок</a>
-        </div>
-      </section>
-
-      <section class="section media-section">
-        <div class="container media-panel">
-          <h2>О НАС ГОВОРЯТ СМИ</h2>
-          <div class="media-links">
-            <a class="btn btn-secondary" href="https://youtu.be/vEMwjXiar0s" target="_blank" rel="noopener">Смотреть в Youtube</a>
-            <a class="btn btn-light" href="https://glaza.info/news/oficial/1591-kto-tvoj-rijelter.html" target="_blank" rel="noopener">Читать на портале</a>
+          <div class="center-action reveal">
+            <button class="btn btn-primary" type="button" data-open-modal data-modal-title="Разобрать мою ситуацию">Разобрать мою ситуацию</button>
           </div>
         </div>
       </section>
 
-      <section class="section form-section form-section-alt">
-        <div class="container form-layout">
-          <div class="form-copy">
-            <p class="eyebrow">Ответьте на 5 простых вопросов</p>
-            <h2>Узнайте точную стоимость и срок продажи Вашей квартиры в течение 5 минут!</h2>
+      <section class="section legal">
+        <div class="container legal-grid">
+          <div class="reveal">
+            <p class="eyebrow">Юридическая безопасность</p>
+            <h2>Юридическая безопасность на каждом этапе</h2>
+            <p>Мы заранее проверяем документы и условия сделки, чтобы снизить риски для продавца и покупателя.</p>
           </div>
-          <form class="card form-card" method="post">
-            <label>
-              <span>Площадь квартиры, указанная в документах</span>
-              <select name="area">
-                <option value="">Выберите из списка</option>
-                <option>до 30 м²</option>
-                <option>30-50 м²</option>
-                <option>50-70 м²</option>
-                <option>70-90 м²</option>
-                <option>более 90 м²</option>
-              </select>
-            </label>
-            <label>
-              <span>Сколько комнат в Вашей квартире?</span>
-              <select name="rooms">
-                <option value="">Выберите из списка</option>
-                <option>Студия</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 и более</option>
-              </select>
-            </label>
-            <label>
-              <span>На каком этаже расположена квартира?</span>
-              <select name="floor">
-                <option value="">Выберите из списка</option>
-                <option>1 этаж</option>
-                <option>2-4 этаж</option>
-                <option>5-9 этаж</option>
-                <option>10 этаж и выше</option>
-              </select>
-            </label>
-            <label>
-              <span>Состояние ремонта в Вашей квартире?</span>
-              <select name="repair_condition">
-                <option value="">Выберите из списка</option>
-                <option>Без ремонта</option>
-                <option>Бабушкин :)</option>
-                <option>Косметический</option>
-                <option>Евроремонт</option>
-                <option>Дизайнерский</option>
-              </select>
-            </label>
-            <label>
-              <span>Мы оценим квартиру и свяжемся с вами</span>
-              <input type="tel" name="phone" placeholder="+375 (29) ___-__-__" />
-            </label>
-            <button class="btn btn-primary" type="submit">УЗНАТЬ СТОИМОСТЬ КВАРТИРЫ</button>
-            <p class="agreement">Нажимая «УЗНАТЬ СТОИМОСТЬ КВАРТИРЫ», даю согласие на обработку персональной информации</p>
-            <a class="details-link" href="#">Подробнее</a>
-          </form>
+          <div class="legal-timeline">
+            <article class="reveal"><span>01</span><h3>Проверка документов</h3><p>Смотрим правоустанавливающие документы, техпаспорт и историю объекта.</p></article>
+            <article class="reveal"><span>02</span><h3>Консультация по рискам</h3><p>Объясняем возможные ограничения, сроки и порядок действий.</p></article>
+            <article class="reveal"><span>03</span><h3>Подготовка договора</h3><p>Фиксируем условия сделки понятным и безопасным способом.</p></article>
+            <article class="reveal"><span>04</span><h3>Переговоры с покупателем</h3><p>Согласуем цену, сроки, порядок оплаты и передачи объекта.</p></article>
+            <article class="reveal"><span>05</span><h3>Аванс / задаток</h3><p>Помогаем оформить предварительные договорённости без риска.</p></article>
+            <article class="reveal"><span>06</span><h3>Организация расчетов</h3><p>Выбираем прозрачный и понятный порядок передачи денег.</p></article>
+            <article class="reveal"><span>07</span><h3>Проведение сделки</h3><p>Сопровождаем стороны до подписания всех документов.</p></article>
+            <article class="reveal"><span>08</span><h3>Передача объекта</h3><p>Закрываем сделку актом передачи и финальными проверками.</p></article>
+          </div>
         </div>
       </section>
 
-      <section class="section documents">
+      <section class="section cases" id="cases">
         <div class="container">
-          <div class="section-head compact">
-            <h2>Свидетельства и лицензии:</h2>
+          <div class="section-head reveal">
+            <p class="eyebrow">Кейсы</p>
+            <h2>Некоторые проданные объекты</h2>
           </div>
-          <div class="document-list">
-            <div>Свидетельство о гос. регистрации</div>
-            <div>Специальное разрешение (лицензия)</div>
-            <div>Страховой полис</div>
-            <div>Свидетельство об аттестации риэлтера Леонов О.А.</div>
-            <div>Свидетельство об аттестации риэлтера Сонкин И.Г.</div>
-            <div>Свидетельство об аттестации риэлтера Стома Ю.Н.</div>
-            <div>Свидетельство об аттестации риэлтера Кожемякин В.В,</div>
-            <div>Свидетельство об аттестации риэлтера Чикунов А.М.</div>
+          <div class="case-grid">
+            <article class="case-card reveal">
+              <div class="case-photo"></div>
+              <div class="case-body">
+                <span class="case-type">Квартира</span>
+                <h3>г. Мозырь, бул. Страконицкий, д. 26</h3>
+                <dl><div><dt>Площадь</dt><dd>97,5 м²</dd></div><div><dt>До</dt><dd>58 000 $</dd></div><div><dt>После</dt><dd>64 000 $</dd></div><div><dt>Результат</dt><dd>+6 000 $</dd></div></dl>
+                <p>Упаковали объект, усилили рекламу и провели переговоры с покупателем.</p>
+              </div>
+            </article>
+            <article class="case-card reveal">
+              <div class="case-photo case-photo-alt"></div>
+              <div class="case-body">
+                <span class="case-type">Квартира</span>
+                <h3>г. Мозырь, ул. Нефтестроителей, д. 24</h3>
+                <dl><div><dt>Площадь</dt><dd>49,5 м²</dd></div><div><dt>До</dt><dd>28 500 $</dd></div><div><dt>После</dt><dd>29 300 $</dd></div><div><dt>Результат</dt><dd>+800 $</dd></div></dl>
+                <p>Скорректировали цену и подачу объявления, нашли покупателя без затяжных торгов.</p>
+              </div>
+            </article>
+            <article class="case-card reveal">
+              <div class="case-photo case-photo-warm"></div>
+              <div class="case-body">
+                <span class="case-type">Дом</span>
+                <h3>Дом в Мозырском районе</h3>
+                <dl><div><dt>Задача</dt><dd>Срочно</dd></div><div><dt>Срок</dt><dd>14 дней</dd></div><div><dt>До</dt><dd>42 000 $</dd></div><div><dt>После</dt><dd>44 500 $</dd></div></dl>
+                <p>Подготовили документы, сделали новую презентацию и вывели объект на покупателей из базы.</p>
+              </div>
+            </article>
+            <article class="case-card reveal">
+              <div class="case-photo case-photo-dark"></div>
+              <div class="case-body">
+                <span class="case-type">Коммерческий объект</span>
+                <h3>Помещение в Калинковичах</h3>
+                <dl><div><dt>Задача</dt><dd>Продажа</dd></div><div><dt>Срок</dt><dd>21 день</dd></div><div><dt>До</dt><dd>31 000 $</dd></div><div><dt>После</dt><dd>33 000 $</dd></div></dl>
+                <p>Собрали аргументы для бизнеса-покупателя и провели переговоры по условиям оплаты.</p>
+              </div>
+            </article>
+            <article class="case-card reveal">
+              <div class="case-photo case-photo-green"></div>
+              <div class="case-body">
+                <span class="case-type">Обмен</span>
+                <h3>Обмен квартиры с доплатой</h3>
+                <dl><div><dt>Задача</dt><dd>Обмен</dd></div><div><dt>Срок</dt><dd>30 дней</dd></div><div><dt>Объект</dt><dd>3 комнаты</dd></div><div><dt>Результат</dt><dd>Новая квартира</dd></div></dl>
+                <p>Синхронизировали продажу и покупку, помогли с документами и безопасными расчетами.</p>
+              </div>
+            </article>
           </div>
-        </div>
-      </section>
-
-      <section class="section form-section" id="consultation">
-        <div class="container form-layout">
-          <div class="form-copy">
-            <p class="eyebrow">Получите бесплатную консультацию риэлтера!</p>
-            <h2>Получите бесплатную консультацию риэлтера!</h2>
-            <p>Заполните форму ниже и Вам перезвонит специалист в ближайшее время</p>
-          </div>
-          <form class="card form-card" method="post">
-            <label>
-              <span>Телефон</span>
-              <input type="tel" name="phone" placeholder="+375 (29) ___ -__-__" />
-            </label>
-            <label>
-              <span>Ваше имя</span>
-              <input type="text" name="name" placeholder="Иван Петров" />
-            </label>
-            <label>
-              <span>Ваша цель</span>
-              <select name="goal">
-                <option value="">Выберите из списка...</option>
-                <option>Продать</option>
-                <option>Купить</option>
-                <option>Обменять</option>
-              </select>
-            </label>
-            <label>
-              <span>Тип недвижимости</span>
-              <select name="property_type">
-                <option value="">Выберите из списка...</option>
-                <option>Квартира</option>
-                <option>Комната / Доля</option>
-                <option>Дом / Коттедж</option>
-                <option>Участок</option>
-                <option>Дача</option>
-                <option>Гараж</option>
-                <option>Коммерческий объект</option>
-                <option>Другое</option>
-              </select>
-            </label>
-            <label>
-              <span>Комнат</span>
-              <select name="rooms">
-                <option value="">Выберите количество комнат</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4 и более</option>
-              </select>
-            </label>
-            <label>
-              <span>Город</span>
-              <select name="city">
-                <option value="">Выберите город</option>
-                <option>Мозырь</option>
-                <option>Калинковичи</option>
-                <option>Петриков</option>
-                <option>Гомель</option>
-                <option>Другой город</option>
-              </select>
-            </label>
-            <label class="full">
-              <span>Комментарий (необязательно)</span>
-              <textarea name="comment" rows="4"></textarea>
-            </label>
-            <button class="btn btn-primary" type="submit">Получить консультацию риэлтера</button>
-            <p class="agreement">Нажимая «Получить консультацию риэлтера», даю согласие на обработку персональной информации</p>
-            <a class="details-link" href="#">Подробнее</a>
-          </form>
         </div>
       </section>
 
       <section class="section reviews" id="reviews">
         <div class="container">
-          <div class="section-head compact">
-            <h2>Лучшая оценка работы - довольные клиенты</h2>
+          <div class="section-head reveal">
+            <p class="eyebrow">Отзывы</p>
+            <h2>Лучшая оценка работы — довольные клиенты</h2>
           </div>
           <div class="review-grid">
-            <blockquote class="card">Мы продавали квартиру вместе с риелтором Олегом, и хочу отметить его высокий профессионализм и ответственное отношение к делу. Олег всегда был на связи, подробно консультировал по всем вопросам, помогал принимать взвешенные решения и сопровождал сделку на каждом этапе. Мы рады нашему сотрудничеству и уверены, что, если снова понадобится помощь риелтора, то обратимся именно к нему!</blockquote>
-            <blockquote class="card">Выражаю огромную благодарность Сонкину Игорю за помощь в продаже квартиры, а также подготовке всех необходимых документов. С большой буквы профессионал в своём деле. Всё организованно, чётко, грамотно, до мелочей объяснит весь процесс сделки.</blockquote>
-            <blockquote class="card">Купили в июле квартиру. Работали с Олегом Леоновым. Профессионал своего дела, все четко и конструктивно, постоянно на связи и вовремя. Детальный анализ всех просматриваемых объектов, их плюсов и минусов, под наш запрос. Ситуацию осложнил тот факт, что продавец оказался далеко не самым ответственным, можно даже сказать, проблемным. При этом Олег успешно регулировал все вопросы и сглаживал конфликтные ситуации. Всем рекомендуем и обязательно будем обращаться еще.</blockquote>
-            <blockquote class="card">Выражаю благодарность агенту Марине за оперативное решение вопроса, профессионализм и чуткое отношение. После неудачной попытки продажи квартиры через другое агентство, обратилась к Марине, которая помогла продать и купить с доплатой квартиру в течение месяца. Я осталась очень довольна! Огромное спасибо за помощь!</blockquote>
-            <blockquote class="card">Хочу выразить огромную благодарность агентству недвижимости «Твой риэлтер». Очень довольна, что обратилась в это агентство. Очень приятные люди и профессионалы в своём деле! Спасибо за то, что помогли очень быстро продать мою квартиру. С вами было спокойно и комфортно сотрудничать. Огромное спасибо Вам Всем!</blockquote>
-            <blockquote class="card">Потрясающее агенство, работают настоящие профессионалы и фанаты своего дела. Грамотные риэлторы, всё отлажено, отточено, индивидуальный подход, высокий уровень в проведении сделок . Огромная благодарность моему Агенту Марине! Умница, красавица, Специалист и Человек с большой буквы! Очень рада, что сделала выбор в пользу Твой риэлтер!</blockquote>
+            <article class="review-card reveal"><div class="review-top"><span class="avatar">О</span><div><strong>Клиент Олега</strong><span>Продажа</span></div></div><p class="stars">★★★★★</p><p>Риэлтер был на связи, подробно консультировал и сопровождал сделку на каждом этапе. Всё прошло спокойно и понятно.</p><button class="text-link" type="button" data-open-modal data-modal-title="Отзыв клиента">Читать полностью</button></article>
+            <article class="review-card reveal"><div class="review-top"><span class="avatar">И</span><div><strong>Клиент агентства</strong><span>Продажа</span></div></div><p class="stars">★★★★★</p><p>Помогли подготовить документы, объяснили процесс сделки и организовали продажу без лишней суеты.</p><button class="text-link" type="button" data-open-modal data-modal-title="Отзыв клиента">Читать полностью</button></article>
+            <article class="review-card reveal"><div class="review-top"><span class="avatar">П</span><div><strong>Покупатель квартиры</strong><span>Покупка</span></div></div><p class="stars">★★★★★</p><p>Подбирали объекты под запрос, честно разбирали плюсы и минусы, помогли урегулировать сложные моменты с продавцом.</p><button class="text-link" type="button" data-open-modal data-modal-title="Отзыв клиента">Читать полностью</button></article>
+            <article class="review-card reveal"><div class="review-top"><span class="avatar">М</span><div><strong>Клиент Марины</strong><span>Обмен</span></div></div><p class="stars">★★★★★</p><p>После неудачной попытки продажи в другом месте квартиру удалось продать и подобрать вариант с доплатой за месяц.</p><button class="text-link" type="button" data-open-modal data-modal-title="Отзыв клиента">Читать полностью</button></article>
+            <article class="review-card reveal"><div class="review-top"><span class="avatar">Т</span><div><strong>Клиент агентства</strong><span>Продажа</span></div></div><p class="stars">★★★★★</p><p>Быстро продали квартиру, было комфортно сотрудничать. Команда держала в курсе и помогала на всех этапах.</p><button class="text-link" type="button" data-open-modal data-modal-title="Отзыв клиента">Читать полностью</button></article>
+            <article class="review-card reveal"><div class="review-top"><span class="avatar">А</span><div><strong>Клиент агентства</strong><span>Сделка под ключ</span></div></div><p class="stars">★★★★★</p><p>Профессиональный подход, грамотные риэлтеры и индивидуальная работа. Сделка прошла организованно.</p><button class="text-link" type="button" data-open-modal data-modal-title="Отзыв клиента">Читать полностью</button></article>
           </div>
         </div>
       </section>
 
-      <section class="section sold">
-        <div class="container">
-          <div class="section-head compact">
-            <h2>Некоторые проданные объекты</h2>
-            <p>Провели 120+ сделок за прошлый год</p>
+      <section class="section media-docs">
+        <div class="container media-docs-grid">
+          <div class="reveal">
+            <div class="section-head align-left">
+              <p class="eyebrow">Доверие</p>
+              <h2>О нас говорят СМИ</h2>
+            </div>
+            <div class="media-grid">
+              <article class="media-card"><span>YouTube</span><h3>Интервью и разборы рынка</h3><button class="text-link" type="button" data-open-modal data-modal-title="Смотреть материалы">Смотреть</button></article>
+              <article class="media-card"><span>glaza.info</span><h3>Публикации о недвижимости</h3><button class="text-link" type="button" data-open-modal data-modal-title="Читать материалы">Читать</button></article>
+            </div>
           </div>
-          <div class="sold-grid">
-            <article class="card sold-card">
-              <span>1/5</span>
-              <p>г. Мозырь, бул. Страконицкий, д. 26. Площадь 97,5м2. Цена, по которой продавали без нас - 58000$. Цена, по которой продали с нами - 64000$</p>
-            </article>
-            <article class="card sold-card">
-              <span>2/5</span>
-              <p>г. Мозырь, ул. Нефтестроителей, д. 24. Площадь - 49,5м2. Цена, по которой продавали без нас - 28500$. Цена, по которой продали с нами - 29300$</p>
-            </article>
+
+          <div class="reveal">
+            <div class="section-head align-left">
+              <p class="eyebrow">Документы</p>
+              <h2>Свидетельства и лицензии</h2>
+            </div>
+            <div class="docs-grid">
+              <article><span>DOC</span><h3>Свидетельство о гос. регистрации</h3></article>
+              <article><span>LIC</span><h3>Специальное разрешение / лицензия</h3></article>
+              <article><span>INS</span><h3>Страховой полис</h3></article>
+              <article><span>ATT</span><h3>Свидетельства об аттестации риэлтеров</h3></article>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section consultation" id="consultation">
+        <div class="container form-section-grid">
+          <div class="reveal">
+            <p class="eyebrow">Консультация</p>
+            <h2>Получите бесплатную консультацию риэлтера</h2>
+            <p>Опишите задачу, и специалист подскажет лучший сценарий: оценка, продажа, покупка, обмен, аренда или юридическое сопровождение.</p>
+          </div>
+
+          <form class="form-card reveal" data-form data-form-name="consultation">
+            <div class="form-two">
+              <label><span>Телефон</span><input type="tel" name="phone" placeholder="+375 (__) ___-__-__" required /></label>
+              <label><span>Имя</span><input type="text" name="name" placeholder="Ваше имя" required /></label>
+            </div>
+            <div class="form-two">
+              <label><span>Цель</span><select name="goal" required><option value="">Выберите</option><option>Продать</option><option>Купить</option><option>Обменять</option></select></label>
+              <label><span>Тип недвижимости</span><select name="property_type" required><option value="">Выберите</option><option>Квартира</option><option>Комната / доля</option><option>Дом / коттедж</option><option>Участок</option><option>Дача</option><option>Гараж</option><option>Коммерческий объект</option><option>Другое</option></select></label>
+            </div>
+            <div class="form-two">
+              <label><span>Количество комнат</span><select name="rooms" required><option value="">Выберите</option><option>Студия</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5 и более</option></select></label>
+              <label><span>Город</span><select name="city" required><option value="">Выберите</option><option>Мозырь</option><option>Калинковичи</option><option>Петриков</option><option>Гомель</option><option>Другой город</option></select></label>
+            </div>
+            <label><span>Комментарий</span><textarea name="comment" rows="4" placeholder="Коротко опишите ситуацию"></textarea></label>
+            <label class="check"><input type="checkbox" name="agreement" required /><span>Согласен на обработку персональных данных</span></label>
+            <button class="btn btn-primary" type="submit">Получить консультацию</button>
+            <p class="form-success" role="status" hidden>Спасибо. Заявка принята, мы скоро свяжемся.</p>
+          </form>
         </div>
       </section>
 
       <section class="section faq" id="faq">
-        <div class="container">
-          <div class="section-head compact">
+        <div class="container faq-grid">
+          <div class="reveal">
+            <p class="eyebrow">FAQ</p>
             <h2>У вас остались вопросы?</h2>
           </div>
-          <div class="faq-list">
-            <details class="card" open>
-              <summary>Какие документы нужны для заключения договора?</summary>
-              <p>Для начала процесса продажи вам понадобятся следующие документы: правоустанавливающий документ (договор купли-продажи; договор дарения; свидетельство о праве на наследство и т.д.), свидетельство о государственной регистрации (регистрационное удостоверение), паспорт, технический паспорт и другие документы, связанные с недвижимостью. Наши специалисты помогут вам составить полный список необходимых документов.</p>
-            </details>
-            <details class="card">
-              <summary>Вы работаете исключительно с квартирами?</summary>
-              <p>Мы специализируемся на продаже и аренде квартир, домов, участков, гаражей и коммерческой недвижимости, включая эксклюзивные объекты. Наше агентство обладает богатым опытом работы с различными видами недвижимости и предоставляет высококлассное обслуживание и индивидуальный подход к каждому клиенту, чтобы сделать процесс максимально успешным и комфортным.</p>
-            </details>
-            <details class="card">
-              <summary>Как вы определите рыночную стоимость недвижимости?</summary>
-              <p>Мы проведем профессиональную оценку вашей недвижимости, учитывая такие факторы, как местоположение, состояние, площадь, инфраструктуру и другие рыночные условия. Мы также проведем анализ рынка и сравним вашу недвижимость с аналогичными объектами, чтобы определить наилучшую цену для продажи.</p>
-            </details>
-            <details class="card">
-              <summary>Как вы будете продвигать мою недвижимость?</summary>
-              <p>Мы используем разнообразные маркетинговые инструменты и каналы для продвижения вашей недвижимости. Это включает размещение объявлений на наших веб-сайтах и партнерских платформах, использование социальных сетей, профессиональные фотографии и описания, а также активное привлечение заинтересованных покупателей через нашу базу данных и сеть контактов.</p>
-            </details>
-            <details class="card">
-              <summary>Какие услуги вы оказываете для заключения сделки?</summary>
-              <p>Мы предоставляем полный спектр услуг для успешного заключения сделки. Это включает проведение показов квартиры потенциальным покупателям, организацию переговоров и безопасных расчетов, сбор необходимых документов. Мы также поможем вам с погашением долгов и снятием обременений, а также предоставим юридическую поддержку на всех этапах сделки.</p>
-            </details>
-            <details class="card">
-              <summary>Как долго займёт процесс продажи недвижимости?</summary>
-              <p>От 3 до 21 дней. Время продажи недвижимости может варьироваться в зависимости от рыночных условий и ваших требований. Однако, благодаря нашей эффективной стратегии и опыту, мы гарантируем, что найдем покупателя за разумное время. В среднем мы находим покупателя за 3 недели.</p>
-            </details>
+          <div class="faq-list reveal">
+            <details open><summary>Какие документы нужны для заключения договора?</summary><p>Обычно нужны паспорт, правоустанавливающий документ, регистрационное удостоверение, техпаспорт и документы по особенностям объекта. Точный список подскажем после консультации.</p></details>
+            <details><summary>Вы работаете только с квартирами?</summary><p>Нет. Работаем с квартирами, домами, дачами, участками, гаражами, долями и коммерческой недвижимостью.</p></details>
+            <details><summary>Как вы определяете рыночную стоимость?</summary><p>Сравниваем объект с похожими предложениями и сделками, учитываем район, состояние, площадь, документы и текущий спрос.</p></details>
+            <details><summary>Как вы будете продвигать мою недвижимость?</summary><p>Готовим объявление, размещаем на площадках, работаем с базой покупателей, отвечаем на звонки, проводим показы и переговоры.</p></details>
+            <details><summary>Какие услуги входят в сопровождение сделки?</summary><p>Консультации, подготовка документов, переговоры, организация аванса или задатка, расчеты, подписание и передача объекта.</p></details>
+            <details><summary>Как долго занимает продажа недвижимости?</summary><p>Срок зависит от цены, состояния и спроса. Некоторые объекты продаются от 2 дней, часто реалистичный ориентир виден после оценки.</p></details>
+            <details><summary>Сколько стоят услуги агентства?</summary><p>Стоимость зависит от задачи и объекта. На консультации объясним условия работы и зафиксируем их в договоре.</p></details>
+            <details><summary>Можно ли продать объект с обременением?</summary><p>Во многих случаях да. Сначала разбираем ограничения, документы и возможный порядок снятия обременений.</p></details>
+            <details><summary>Работаете ли вы без предоплаты?</summary><p>Да, консультация и оценка бесплатны. Условия дальнейшей работы обсуждаются заранее и фиксируются письменно.</p></details>
           </div>
-        </div>
-      </section>
-
-      <section class="section final-request" id="final-request">
-        <div class="container form-layout">
-          <div class="form-copy">
-            <p class="eyebrow">Оставьте заявку и мы Вам перезвоним!</p>
-            <h2>Оставьте заявку и мы Вам перезвоним!</h2>
-            <p>Получите бесплатную консультацию риэлтера, заполнив форму ниже</p>
-          </div>
-          <form class="card form-card" method="post">
-            <label>
-              <span>Телефон</span>
-              <input type="tel" name="phone" placeholder="+375 (29) ___ -__-__" />
-            </label>
-            <label>
-              <span>Ваше имя</span>
-              <input type="text" name="name" placeholder="Иван Петров" />
-            </label>
-            <button class="btn btn-primary" type="submit">Заказать звонок</button>
-            <p class="agreement">Нажимая «Заказать звонок», даю согласие на обработку персональной информации</p>
-            <a class="details-link" href="#">Подробнее</a>
-          </form>
         </div>
       </section>
 
       <section class="section contacts" id="contacts">
         <div class="container">
-          <div class="section-head compact">
+          <div class="section-head reveal">
+            <p class="eyebrow">Контакты</p>
             <h2>Контакты</h2>
-            <p>Для заказа бесплатной консультации специалиста, свяжитесь с нами удобным для Вас способом</p>
           </div>
-          <div class="contact-grid">
-            <div class="card contact-card">
-              <span>Телефон</span>
-              <a href="tel:+375291451071">+375 29 145 10 71</a>
+          <div class="contacts-grid">
+            <div class="contact-panel reveal">
+              <article><span>Телефон</span><a href="tel:+375291451071">+375 29 145-10-71</a></article>
+              <article><span>Email</span><a href="mailto:reelter19@gmail.com">reelter19@gmail.com</a></article>
+              <article><span>Адрес</span><a href="https://yandex.ru/maps/?text=г.%20Мозырь%2C%20ул.%20Ленинская%2C%20д.%2011" target="_blank" rel="noopener">г. Мозырь, ул. Ленинская, д. 11</a></article>
+              <article><span>Часы работы</span><p>Пн — Пт с 9:00 до 18:00</p></article>
+              <article><span>Как добраться</span><p>Автобусы 16, 20, остановка «Главпочтамт»</p></article>
+              <div class="contact-actions">
+                <a class="btn btn-primary" href="tel:+375291451071">Позвонить</a>
+                <button class="btn btn-light" type="button" data-open-modal data-modal-title="Написать в Telegram">Telegram</button>
+                <button class="btn btn-light" type="button" data-open-modal data-modal-title="Написать в WhatsApp">WhatsApp</button>
+                <button class="btn btn-light" type="button" data-open-modal data-modal-title="Написать в Viber">Viber</button>
+                <button class="btn btn-ghost" type="button" data-open-modal data-modal-title="Задать вопрос">Задать вопрос</button>
+              </div>
             </div>
-            <div class="card contact-card">
-              <span>Телефон</span>
-              <button class="text-button" type="button" data-show-phone data-target-phone="+375 23 677 22 77">+375 2X XXX XX XX Показать телефон</button>
-            </div>
-            <div class="card contact-card">
-              <span>Часы работы</span>
-              <p>Пн — Пт с 9:00 до 18:00</p>
-            </div>
-            <div class="card contact-card">
-              <span>Центральный офис</span>
-              <a href="https://yandex.ru/maps/?text=г.%20Мозырь%2C%20ул.%20Ленинская%2C%20д.11" target="_blank" rel="noopener">г. Мозырь, ул. Ленинская, д.11</a>
-            </div>
-            <div class="card contact-card">
-              <span>E-mail</span>
-              <a href="mailto:reelter19@gmail.com">reelter19@gmail.com</a>
-            </div>
-            <div class="card contact-card">
-              <span>Как добраться:</span>
-              <p>Автобусы 16, 20 (ост-ка "Главпочтамт")</p>
+
+            <div class="map-card reveal" aria-label="Карта офиса">
+              <div class="map-pin"></div>
+              <div class="map-office">
+                <span>Центральный офис</span>
+                <strong>ул. Ленинская, д. 11</strong>
+                <p>Мозырь</p>
+              </div>
             </div>
           </div>
         </div>
@@ -604,14 +580,76 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer-inner">
-        <a class="brand" href="#top" aria-label="© ТВОЙ РИЭЛТЕР">
-          <span class="brand-mark">ТР</span>
-          <span>© ТВОЙ РИЭЛТЕР</span>
-        </a>
-        <p>© ООО «Твой риэлтер» 2019 - 2026</p>
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#top" aria-label="ТР | Твой риэлтер">
+            <span class="brand-mark">ТР</span>
+            <span class="brand-text">Твой риэлтер</span>
+          </a>
+          <p>Современное агентство недвижимости в Мозыре: оценка, продажа, покупка, обмен, аренда и юридическое сопровождение.</p>
+        </div>
+        <nav aria-label="Меню в подвале">
+          <h3>Меню</h3>
+          <a href="#services">Услуги</a>
+          <a href="#valuation">Оценка онлайн</a>
+          <a href="#cases">Кейсы</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+        <div>
+          <h3>Услуги</h3>
+          <p>Продажа, покупка, обмен, аренда, срочный выкуп, снятие обременений.</p>
+        </div>
+        <div>
+          <h3>Контакты</h3>
+          <a href="tel:+375291451071">+375 29 145-10-71</a>
+          <a href="mailto:reelter19@gmail.com">reelter19@gmail.com</a>
+          <p>г. Мозырь, ул. Ленинская, д. 11</p>
+          <div class="footer-socials" aria-label="Соцсети и мессенджеры">
+            <button type="button" data-open-modal data-modal-title="Написать в Telegram">Telegram</button>
+            <button type="button" data-open-modal data-modal-title="Написать в WhatsApp">WhatsApp</button>
+            <button type="button" data-open-modal data-modal-title="Написать в Viber">Viber</button>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>ООО «Твой риэлтер»</span>
+        <span>© 2019–2026</span>
+        <button type="button" data-open-modal data-modal-title="Политика обработки персональных данных">Политика обработки персональных данных</button>
       </div>
     </footer>
+
+    <button class="floating-call" type="button" data-open-modal data-modal-title="Заказать звонок">Заказать звонок</button>
+
+    <div class="mobile-actions" aria-label="Быстрые действия">
+      <a href="tel:+375291451071">Позвонить</a>
+      <a href="#valuation">Оценить объект</a>
+    </div>
+
+    <div class="modal" data-modal hidden>
+      <div class="modal-overlay" data-close-modal></div>
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Закрыть окно" data-close-modal>×</button>
+        <p class="eyebrow">Заявка</p>
+        <h2 id="modal-title">Заказать звонок</h2>
+        <form data-form data-form-name="callback-modal">
+          <label><span>Имя</span><input type="text" name="name" placeholder="Ваше имя" required /></label>
+          <label><span>Телефон</span><input type="tel" name="phone" placeholder="+375 (__) ___-__-__" required /></label>
+          <label>
+            <span>Способ связи</span>
+            <select name="contact_method" required>
+              <option>Телефон</option>
+              <option>WhatsApp</option>
+              <option>Telegram</option>
+              <option>Viber</option>
+            </select>
+          </label>
+          <label><span>Комментарий</span><textarea name="comment" rows="4" placeholder="Напишите, чем можем помочь"></textarea></label>
+          <label class="check"><input type="checkbox" name="agreement" required /><span>Согласен на обработку персональных данных</span></label>
+          <button class="btn btn-primary" type="submit">Отправить</button>
+          <p class="form-success" role="status" hidden>Спасибо. Заявка отправлена, мы скоро свяжемся.</p>
+        </form>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
