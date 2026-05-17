@@ -903,6 +903,7 @@ dt {
 
 .legal-grid {
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  align-items: start;
 }
 
 .legal-timeline {
@@ -913,22 +914,39 @@ dt {
 .legal-timeline article {
   position: relative;
   display: grid;
-  grid-template-columns: 70px 1fr;
-  gap: 18px;
-  padding: 20px;
+  grid-template-columns: 56px minmax(0, 1fr);
+  align-items: start;
+  gap: 22px;
+  padding: 24px;
 }
 
 .legal-timeline span {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
   margin: 0;
+  border-radius: 14px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--navy), var(--gold));
+  font-size: 14px;
+  line-height: 1;
+}
+
+.legal-timeline article > div {
+  min-width: 0;
 }
 
 .legal-timeline h3 {
   margin-bottom: 6px;
-  font-size: 19px;
+  font-size: 22px;
+  overflow-wrap: normal;
 }
 
 .legal-timeline p {
+  max-width: 560px;
   margin-bottom: 0;
+  overflow-wrap: normal;
 }
 
 .case-grid {
