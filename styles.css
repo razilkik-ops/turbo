@@ -649,8 +649,7 @@ dt {
 .legal-grid,
 .form-section-grid,
 .contacts-grid,
-.faq-grid,
-.media-docs-grid {
+.faq-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
   gap: clamp(28px, 5vw, 70px);
@@ -1033,33 +1032,83 @@ dd {
   letter-spacing: 0.12em;
 }
 
-.media-docs-grid {
-  grid-template-columns: 0.85fr 1.15fr;
+.media-block {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(24px, 5vw, 56px);
+  align-items: end;
+  margin-bottom: clamp(42px, 7vw, 76px);
 }
 
-.media-grid,
-.docs-grid {
+.media-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
 }
 
-.media-card,
-.docs-grid article {
+.media-card {
   padding: 22px;
 }
 
-.media-card span,
-.docs-grid span {
+.media-card span {
   display: inline-flex;
   margin-bottom: 22px;
   color: var(--gold);
   font-weight: 900;
 }
 
-.docs-grid h3,
 .media-card h3 {
   font-size: 19px;
+}
+
+.documents-block {
+  padding: clamp(22px, 4vw, 34px);
+  border: 1px solid rgba(18, 172, 236, 0.14);
+  border-radius: 32px;
+  background: linear-gradient(180deg, rgba(232, 247, 255, 0.78), rgba(255, 255, 255, 0.72));
+  box-shadow: var(--shadow-soft);
+}
+
+.documents-block .section-head {
+  margin-bottom: 32px;
+}
+
+.docs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.docs-grid article {
+  overflow: hidden;
+  border: 1px solid rgba(8, 126, 226, 0.12);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 14px 34px rgba(17, 24, 39, 0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.docs-grid article:hover {
+  transform: translateY(-4px);
+  border-color: rgba(18, 172, 236, 0.36);
+  box-shadow: var(--shadow);
+}
+
+.docs-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  background: var(--surface-soft);
+}
+
+.docs-grid h3 {
+  min-height: 86px;
+  margin: 0;
+  padding: 16px;
+  color: #5f6b76;
+  font-size: 17px;
+  line-height: 1.25;
 }
 
 .form-section-grid {
@@ -1411,8 +1460,12 @@ dd {
   .form-section-grid,
   .contacts-grid,
   .faq-grid,
-  .media-docs-grid {
+  .media-block {
     grid-template-columns: 1fr;
+  }
+
+  .docs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .quiz-copy,
