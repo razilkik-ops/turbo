@@ -14,14 +14,11 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
       rel="stylesheet"
     />
+    <link rel="preload" as="image" href="assets/photos/hero-apartment.jpg" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="ТР | Твой риэлтер">
-        <img class="brand-logo" src="assets/logo.png" alt="Твой риэлтер" />
-      </a>
-
       <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-toggle>
         <span></span>
         <span></span>
@@ -30,11 +27,11 @@
 
       <nav class="nav" aria-label="Основное меню">
         <a href="#services">Услуги</a>
-        <a href="#process">Этапы работы</a>
         <a href="#valuation">Оценка онлайн</a>
         <a href="#benefits">Преимущества</a>
-        <a href="#reviews">Отзывы</a>
-        <a href="#faq">FAQ</a>
+        <a href="#process">Этапы</a>
+        <a href="#cases">Кейсы</a>
+        <a href="#media-docs">Документы</a>
         <a href="#contacts">Контакты</a>
       </nav>
 
@@ -49,18 +46,17 @@
       <section class="hero section">
         <div class="container hero-grid">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Мозырь, Калинковичи и Гомельская область</p>
-            <h1>Продадим вашу недвижимость в Мозыре быстро, выгодно и безопасно</h1>
+            <p class="eyebrow">Премиальная продажа недвижимости</p>
+            <h1>Продадим объект дороже с сильной упаковкой и точной стратегией</h1>
             <p class="hero-lead">
-              Оценим объект, подготовим рекламу, найдём покупателя, проведём переговоры и сопроводим сделку до передачи ключей.
+              Оценка, упаковка, реклама, показы, переговоры и юридическое сопровождение сделки в Мозыре и области.
             </p>
 
             <div class="badge-row" aria-label="Ключевые преимущества">
-              <span>Бесплатная оценка</span>
+              <span>Премиальная подача объекта</span>
+              <span>Точная рыночная оценка</span>
               <span>Без предоплаты</span>
-              <span>Юридическое сопровождение</span>
-              <span>Своя база покупателей</span>
-              <span>Работаем с проблемными объектами</span>
+              <span>Сделка под юридическим контролем</span>
             </div>
 
             <div class="hero-cta-row">
@@ -89,27 +85,48 @@
               <p class="form-success" role="status" hidden>Спасибо. Мы свяжемся с вами и подготовим оценку.</p>
             </form>
 
-            <article class="object-card" aria-label="Визуальная карточка объекта">
-              <div class="object-visual">
-                <div class="object-tag">2-комнатная квартира</div>
-              </div>
-              <div class="object-info">
-                <div>
-                  <span>Ориентир</span>
-                  <strong>Мозырь, центр</strong>
-                </div>
-                <div>
-                  <span>Стратегия</span>
-                  <strong>Цена + реклама + показы</strong>
-                </div>
-              </div>
-            </article>
-
             <div class="stats-grid">
               <div><strong>120+</strong><span>сделок за прошлый год</span></div>
               <div><strong>50+</strong><span>актуальных заявок покупателей</span></div>
               <div><strong>от 2 дней</strong><span>срок продажи</span></div>
               <div><strong>0 BYN</strong><span>предоплата</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience" id="experience" hidden>
+        <div class="container experience-grid">
+          <div class="experience-photo reveal">
+            <img src="assets/photos/consultation.jpg" alt="Консультация риэлтера с клиентом по продаже недвижимости" loading="lazy" />
+            <div class="photo-note">
+              <span>Личная стратегия</span>
+              <strong>Не просто объявление, а понятный план продажи</strong>
+            </div>
+          </div>
+
+          <div class="experience-copy reveal">
+            <p class="eyebrow">Подход агентства</p>
+            <h2>Делаем продажу заметной, понятной и спокойной</h2>
+            <p>
+              Покупатель быстрее доверяет объекту, когда видит сильную подачу: аккуратные фото, честное описание, понятные документы и уверенные переговоры.
+            </p>
+            <div class="experience-points">
+              <article>
+                <span>01</span>
+                <h3>Упаковка объекта</h3>
+                <p>Подсказываем, что убрать, что подчеркнуть и как показать квартиру дороже.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>Живой контакт</h3>
+                <p>Берём звонки, показы и возражения на себя, чтобы продажа не съедала ваши вечера.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Контроль сделки</h3>
+                <p>Собираем документы и заранее закрываем юридические вопросы.</p>
+              </article>
             </div>
           </div>
         </div>
@@ -125,7 +142,17 @@
 
           <div class="service-grid">
             <article class="service-card reveal">
-              <span class="card-icon">01</span>
+              <div class="service-card-top">
+                <span class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" focusable="false">
+                    <path d="M12 31 32 13l20 18" />
+                    <path d="M18 29v23h28V29" />
+                    <path d="M27 52V39h10v13" />
+                    <path d="M22 34h8" />
+                    <path d="M38 34h4" />
+                  </svg>
+                </span>
+              </div>
               <h3>Частным лицам</h3>
               <p>Поможем продать, купить или обменять квартиру, дом, дачу, участок или долю.</p>
               <ul>
@@ -140,7 +167,16 @@
             </article>
 
             <article class="service-card reveal">
-              <span class="card-icon">02</span>
+              <div class="service-card-top">
+                <span class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" focusable="false">
+                    <path d="M12 24h40v26H12z" />
+                    <path d="M24 24v-8h16v8" />
+                    <path d="M12 34h40" />
+                    <path d="M28 34v6h8v-6" />
+                  </svg>
+                </span>
+              </div>
               <h3>Юридическим лицам</h3>
               <p>Работаем с коммерческими объектами, арендой и сделками для бизнеса.</p>
               <ul>
@@ -153,7 +189,14 @@
             </article>
 
             <article class="service-card reveal">
-              <span class="card-icon">03</span>
+              <div class="service-card-top">
+                <span class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" focusable="false">
+                    <path d="M32 10 49 17v13c0 12-7 20-17 24-10-4-17-12-17-24V17l17-7Z" />
+                    <path d="m32 24 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6Z" />
+                  </svg>
+                </span>
+              </div>
               <h3>Дополнительные услуги</h3>
               <p>Разбираем сложные ситуации и помогаем подготовить объект к безопасной продаже.</p>
               <ul>
@@ -167,7 +210,13 @@
             </article>
 
             <article class="service-card service-card-accent reveal">
-              <span class="card-icon">04</span>
+              <div class="service-card-top">
+                <span class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" focusable="false">
+                    <path d="M36 8 18 36h14l-4 20 18-30H32l4-18Z" />
+                  </svg>
+                </span>
+              </div>
               <h3>Срочный выкуп</h3>
               <p>Когда важна скорость: оценим объект, предложим решение и проведём сделку под ключ.</p>
               <ul>
@@ -189,14 +238,112 @@
             <h2>Почему с нами выгоднее</h2>
           </div>
           <div class="benefit-grid">
-            <article class="benefit-card reveal"><span>01</span><h3>Бесплатно определим рыночную стоимость</h3></article>
-            <article class="benefit-card reveal"><span>02</span><h3>Продадим по максимальной цене</h3></article>
-            <article class="benefit-card reveal"><span>03</span><h3>Своя база покупателей</h3></article>
-            <article class="benefit-card reveal"><span>04</span><h3>Работаем с проблемными объектами</h3></article>
-            <article class="benefit-card reveal"><span>05</span><h3>Продажа от 2 дней</h3></article>
-            <article class="benefit-card reveal"><span>06</span><h3>Полное юридическое сопровождение</h3></article>
-            <article class="benefit-card reveal"><span>07</span><h3>Без предоплаты</h3></article>
-            <article class="benefit-card reveal"><span>08</span><h3>Полный комплекс услуг под ключ</h3></article>
+            <article class="benefit-card reveal">
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" focusable="false">
+                  <path d="M25 38a15 15 0 1 0 0-30 15 15 0 0 0 0 30Z" />
+                  <path d="m36 36 17 17" />
+                  <path d="M15 27V17l10-8 10 8v10" />
+                  <path d="M20 27v-8h10v8" />
+                </svg>
+              </span>
+              <span class="benefit-divider" aria-hidden="true"></span>
+              <h3>Бесплатно определим рыночную стоимость</h3>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" focusable="false">
+                  <path d="M10 45 25 30l10 10 19-19" />
+                  <path d="M40 21h14v14" />
+                </svg>
+              </span>
+              <span class="benefit-divider" aria-hidden="true"></span>
+              <h3>Продадим по максимальной цене</h3>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" focusable="false">
+                  <path d="M32 33a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" />
+                  <path d="M17 52c0-10 6-17 15-17s15 7 15 17" />
+                  <path d="M14 34a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z" />
+                  <path d="M7 50c0-7 4-12 10-14" />
+                  <path d="M50 34a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z" />
+                  <path d="M57 50c0-7-4-12-10-14" />
+                </svg>
+              </span>
+              <span class="benefit-divider" aria-hidden="true"></span>
+              <h3>Своя база покупателей</h3>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" focusable="false">
+                  <path d="M13 30 32 13l19 17" />
+                  <path d="M19 29v24h26V29" />
+                  <path d="M32 25v14" />
+                  <path d="M32 47h.01" />
+                </svg>
+              </span>
+              <span class="benefit-divider" aria-hidden="true"></span>
+              <h3>Работаем с проблемными объектами</h3>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" focusable="false">
+                  <path d="M31 56a24 24 0 1 1 20-10" />
+                  <path d="M31 14v5" />
+                  <path d="M31 43v5" />
+                  <path d="M12 33h5" />
+                  <path d="M45 33h5" />
+                  <path d="M31 24v11l8 5" />
+                  <path d="m49 34-7 12h8l-5 12" />
+                </svg>
+              </span>
+              <span class="benefit-divider" aria-hidden="true"></span>
+              <h3>Продажа от 2 дней</h3>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" focusable="false">
+                  <path d="M32 9v43" />
+                  <path d="M17 17h30" />
+                  <path d="M23 17 13 38h20L23 17Z" />
+                  <path d="M41 17 32 38h18L41 17Z" />
+                  <path d="M20 55h24" />
+                  <path d="M44 41 52 45v9c0 4-3 7-8 9-5-2-8-5-8-9v-9l8-4Z" />
+                  <path d="m40 52 3 3 6-7" />
+                </svg>
+              </span>
+              <span class="benefit-divider" aria-hidden="true"></span>
+              <h3>Полное юридическое сопровождение</h3>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" focusable="false">
+                  <path d="M12 22h35a7 7 0 0 1 7 7v21H16a8 8 0 0 1-8-8V18a7 7 0 0 1 7-7h27" />
+                  <path d="M12 22 43 9v13" />
+                  <path d="M41 35h15v12H41a6 6 0 0 1 0-12Z" />
+                  <path d="M45 41h.01" />
+                </svg>
+              </span>
+              <span class="benefit-divider" aria-hidden="true"></span>
+              <h3>Без предоплаты</h3>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" focusable="false">
+                  <path d="M20 12h25v37H15V12h5Z" />
+                  <path d="M23 12a5 5 0 0 1 10 0" />
+                  <path d="m22 27 3 3 6-7" />
+                  <path d="M36 28h8" />
+                  <path d="m22 39 3 3 6-7" />
+                  <path d="M36 40h8" />
+                  <path d="M47 49 58 60" />
+                  <path d="M50 45a7 7 0 1 0 0 14 7 7 0 0 0 0-14Z" />
+                </svg>
+              </span>
+              <span class="benefit-divider" aria-hidden="true"></span>
+              <h3>Полный комплекс услуг под ключ</h3>
+            </article>
           </div>
         </div>
       </section>
@@ -205,11 +352,23 @@
         <div class="container quiz-layout">
           <div class="quiz-copy reveal">
             <p class="eyebrow">Оценка онлайн</p>
-            <h2>Узнайте стоимость недвижимости за 5 минут</h2>
+            <h2>Узнайте<br />стоимость<br />недвижимости<br /><span>за 5 минут</span></h2>
             <p>Ответьте на несколько вопросов — специалист рассчитает ориентировочную стоимость и свяжется с вами удобным способом.</p>
             <div class="callout">
-              <strong>Что вы получите</strong>
-              <span>Диапазон цены, срок продажи и список шагов для подготовки объекта.</span>
+              <span class="callout-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" focusable="false">
+                  <path d="M14 8h20v32H14z" />
+                  <path d="M20 16h8" />
+                  <path d="M20 23h8" />
+                  <path d="M20 30h5" />
+                  <path d="M31 31h5" />
+                  <path d="M31 35h5" />
+                </svg>
+              </span>
+              <span class="callout-copy">
+                <strong>Что вы получите</strong>
+                <span>Диапазон цены, срок продажи и список шагов для подготовки объекта.</span>
+              </span>
             </div>
           </div>
 
@@ -222,14 +381,14 @@
             <div class="quiz-step active" data-step="0">
               <h3>Что хотите оценить?</h3>
               <div class="option-grid">
-                <label><input type="radio" name="property" value="Квартира" required /> <span>Квартира</span></label>
-                <label><input type="radio" name="property" value="Комната / доля" /> <span>Комната / доля</span></label>
-                <label><input type="radio" name="property" value="Дом / коттедж" /> <span>Дом / коттедж</span></label>
-                <label><input type="radio" name="property" value="Участок" /> <span>Участок</span></label>
-                <label><input type="radio" name="property" value="Дача" /> <span>Дача</span></label>
-                <label><input type="radio" name="property" value="Гараж" /> <span>Гараж</span></label>
-                <label><input type="radio" name="property" value="Коммерческий объект" /> <span>Коммерческий объект</span></label>
-                <label><input type="radio" name="property" value="Другое" /> <span>Другое</span></label>
+                <label><input type="radio" name="property" value="Квартира" required /> <span><svg class="quiz-option-icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M13 40V10h13v30" /><path d="M26 18h10v22" /><path d="M17 16h4M17 23h4M17 30h4M30 24h3M30 31h3M10 40h29" /></svg>Квартира</span></label>
+                <label><input type="radio" name="property" value="Комната / доля" /> <span><svg class="quiz-option-icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M15 9h18v30H15z" /><path d="M29 24h1" /><path d="M11 39h26" /></svg>Комната / доля</span></label>
+                <label><input type="radio" name="property" value="Дом / коттедж" /> <span><svg class="quiz-option-icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M9 24 24 11l15 13" /><path d="M14 22v18h20V22" /><path d="M21 40V29h6v11" /></svg>Дом / коттедж</span></label>
+                <label><input type="radio" name="property" value="Участок" /> <span><svg class="quiz-option-icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M24 39V20" /><path d="M17 25c-5-1-7-5-5-10 6-1 10 2 11 7" /><path d="M31 25c5-1 7-5 5-10-6-1-10 2-11 7" /><path d="M18 39h12" /></svg>Участок</span></label>
+                <label><input type="radio" name="property" value="Дача" /> <span><svg class="quiz-option-icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M10 25 24 13l14 12" /><path d="M15 23v17h18V23" /><path d="M28 15v-4h5v9" /><path d="M20 40V30h8v10" /><path d="M31 31h4" /></svg>Дача</span></label>
+                <label><input type="radio" name="property" value="Гараж" /> <span><svg class="quiz-option-icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M9 21 24 13l15 8v19H9z" /><path d="M15 40V26h18v14" /><path d="M18 30h12M18 35h12" /></svg>Гараж</span></label>
+                <label><input type="radio" name="property" value="Коммерческий объект" /> <span><svg class="quiz-option-icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M12 40V10h13v30" /><path d="M25 18h11v22" /><path d="M16 16h4M16 23h4M16 30h4M29 24h3M29 31h3M9 40h30" /></svg>Коммерческий объект</span></label>
+                <label><input type="radio" name="property" value="Другое" /> <span><svg class="quiz-option-icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M14 24a10 10 0 1 0 20 0 10 10 0 0 0-20 0Z" /><path d="M19 24h.01M24 24h.01M29 24h.01" /></svg>Другое</span></label>
               </div>
             </div>
 
@@ -311,18 +470,53 @@
             <h2>Как устроен процесс продажи</h2>
           </div>
           <div class="timeline">
-            <article class="timeline-card reveal"><span>1</span><h3>Бесплатная консультация</h3><p>Разбираем вашу ситуацию, цель, сроки и особенности объекта.</p></article>
-            <article class="timeline-card reveal"><span>2</span><h3>Определение стоимости</h3><p>Анализируем рынок, похожие сделки и потенциал объекта.</p></article>
-            <article class="timeline-card reveal"><span>3</span><h3>Заключение договора</h3><p>Фиксируем условия работы, ответственность и юридическую безопасность.</p></article>
-            <article class="timeline-card reveal"><span>4</span><h3>Подготовка объекта к продаже</h3><p>Готовим фото, описание, рекомендации и стратегию продвижения.</p></article>
-            <article class="timeline-card reveal"><span>5</span><h3>Запуск рекламы</h3><p>Размещаем объект на площадках и используем базу покупателей.</p></article>
-            <article class="timeline-card reveal"><span>6</span><h3>Показы и переговоры</h3><p>Берём на себя звонки, показы, аргументацию и переговоры.</p></article>
-            <article class="timeline-card reveal"><span>7</span><h3>Проведение сделки</h3><p>Готовим документы, сопровождаем расчеты и передачу объекта.</p></article>
+            <article class="timeline-card reveal">
+              <span class="step-number">1</span>
+              <svg class="step-icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M11 17c0-5 5-9 12-9s14 4 14 12-6 12-14 12h-5l-7 6 2-8c-2-2-2-5-2-8v-5Z" /><path d="M18 21h.01M24 21h.01M30 21h.01" /></svg>
+              <h3>Бесплатная консультация</h3>
+              <p>Разбираем вашу ситуацию, цель, сроки и особенности объекта.</p>
+            </article>
+            <article class="timeline-card reveal">
+              <span class="step-number">2</span>
+              <svg class="step-icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M10 36h28" /><path d="M14 36V24" /><path d="M22 36V18" /><path d="M30 36V12" /><path d="m31 12 6 1-1 6" /><path d="m12 22 8-8 6 4 10-10" /></svg>
+              <h3>Определение стоимости</h3>
+              <p>Анализируем рынок, похожие сделки и потенциал объекта.</p>
+            </article>
+            <article class="timeline-card reveal">
+              <span class="step-number">3</span>
+              <svg class="step-icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M14 8h18l6 6v26H14z" /><path d="M32 8v7h6" /><path d="M20 18h10M20 25h12M20 32h6" /><path d="m30 36 6-6 3 3-6 6h-3z" /></svg>
+              <h3>Заключение договора</h3>
+              <p>Фиксируем условия работы, ответственность и юридическую безопасность.</p>
+            </article>
+            <article class="timeline-card reveal">
+              <span class="step-number">4</span>
+              <svg class="step-icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M12 16h7l3-4h8l3 4h3a4 4 0 0 1 4 4v16H8V20a4 4 0 0 1 4-4Z" /><path d="M24 32a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z" /></svg>
+              <h3>Подготовка объекта к продаже</h3>
+              <p>Готовим фото, описание, рекомендации и стратегию продвижения.</p>
+            </article>
+            <article class="timeline-card reveal">
+              <span class="step-number">5</span>
+              <svg class="step-icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M10 29h8l16 8V11L18 19h-8z" /><path d="M18 29v8" /><path d="M38 18c2 2 2 8 0 10" /></svg>
+              <h3>Запуск рекламы</h3>
+              <p>Размещаем объект на площадках и используем базу покупателей.</p>
+            </article>
+            <article class="timeline-card reveal">
+              <span class="step-number">6</span>
+              <svg class="step-icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M15 34c0-6 4-10 9-10s9 4 9 10" /><path d="M24 21a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" /><path d="M31 10h8v9h-6l-4 4v-4h-2" /><path d="M10 30h-2c-3 0-5 3-5 7" /></svg>
+              <h3>Показы и переговоры</h3>
+              <p>Берём на себя звонки, показы, аргументацию и переговоры.</p>
+            </article>
+            <article class="timeline-card reveal">
+              <span class="step-number">7</span>
+              <svg class="step-icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M24 7 38 13v11c0 10-6 16-14 19-8-3-14-9-14-19V13z" /><path d="m18 25 4 4 8-10" /></svg>
+              <h3>Проведение сделки</h3>
+              <p>Готовим документы, сопровождаем расчеты и передачу объекта.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section marketing">
+      <section class="section marketing" hidden>
         <div class="container marketing-grid">
           <div class="reveal">
             <p class="eyebrow">IT-агентство недвижимости</p>
@@ -350,7 +544,7 @@
         </div>
       </section>
 
-      <section class="section problems">
+      <section class="section problems" hidden>
         <div class="container">
           <div class="section-head reveal">
             <p class="eyebrow">Сложные объекты</p>
@@ -373,7 +567,7 @@
         </div>
       </section>
 
-      <section class="section legal" id="legal">
+      <section class="section legal" id="legal" hidden>
         <div class="container legal-grid">
           <div class="reveal">
             <p class="eyebrow">Юридическая безопасность</p>
@@ -401,55 +595,214 @@
           </div>
           <div class="case-grid">
             <article class="case-card reveal">
-              <div class="case-photo"></div>
+              <div class="case-photo">
+                <img src="assets/photos/hero-apartment.jpg" alt="Интерьер проданной квартиры в Мозыре" loading="lazy" />
+                <span class="case-check" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" focusable="false">
+                    <path d="m8 17 5 5L24 10" />
+                    <path d="m9 12 3-3" />
+                  </svg>
+                </span>
+              </div>
               <div class="case-body">
                 <span class="case-type">Квартира</span>
                 <h3>г. Мозырь, бул. Страконицкий, д. 26</h3>
-                <dl><div><dt>Площадь</dt><dd>97,5 м²</dd></div><div><dt>До</dt><dd>58 000 $</dd></div><div><dt>После</dt><dd>64 000 $</dd></div><div><dt>Результат</dt><dd>+6 000 $</dd></div></dl>
+                <dl>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 6h20v20H6z" /><path d="M16 6v20M6 16h20" /></svg><span>Площадь</span></dt>
+                    <dd>97,5 м²</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="m7 17 10-10h8v8L15 25 7 17Z" /><path d="M22 10h.01" /></svg><span>До</span></dt>
+                    <dd>58 000 $</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 12h16a4 4 0 0 1 4 4v9H10a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h10" /><path d="M6 12 20 5v7" /><path d="M19 17h8v6h-8a3 3 0 0 1 0-6Z" /></svg><span>После</span></dt>
+                    <dd>64 000 $</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 25h20" /><path d="M9 22v-5M16 22v-9M23 22V9" /><path d="m19 9 4-4 4 4" /><path d="m6 17 6-6 4 4 9-9" /></svg><span>Результат</span></dt>
+                    <dd>+6 000 $</dd>
+                  </div>
+                </dl>
                 <p>Упаковали объект, усилили рекламу и провели переговоры с покупателем.</p>
               </div>
             </article>
             <article class="case-card reveal">
-              <div class="case-photo case-photo-alt"></div>
+              <div class="case-photo">
+                <img src="assets/photos/case-apartment.jpg" alt="Кухня проданной квартиры после подготовки к продаже" loading="lazy" />
+                <span class="case-check" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" focusable="false">
+                    <path d="m8 17 5 5L24 10" />
+                    <path d="m9 12 3-3" />
+                  </svg>
+                </span>
+              </div>
               <div class="case-body">
                 <span class="case-type">Квартира</span>
                 <h3>г. Мозырь, ул. Нефтестроителей, д. 24</h3>
-                <dl><div><dt>Площадь</dt><dd>49,5 м²</dd></div><div><dt>До</dt><dd>28 500 $</dd></div><div><dt>После</dt><dd>29 300 $</dd></div><div><dt>Результат</dt><dd>+800 $</dd></div></dl>
+                <dl>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 6h20v20H6z" /><path d="M16 6v20M6 16h20" /></svg><span>Площадь</span></dt>
+                    <dd>49,5 м²</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="m7 17 10-10h8v8L15 25 7 17Z" /><path d="M22 10h.01" /></svg><span>До</span></dt>
+                    <dd>28 500 $</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 12h16a4 4 0 0 1 4 4v9H10a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h10" /><path d="M6 12 20 5v7" /><path d="M19 17h8v6h-8a3 3 0 0 1 0-6Z" /></svg><span>После</span></dt>
+                    <dd>29 300 $</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 25h20" /><path d="M9 22v-5M16 22v-9M23 22V9" /><path d="m19 9 4-4 4 4" /><path d="m6 17 6-6 4 4 9-9" /></svg><span>Результат</span></dt>
+                    <dd>+800 $</dd>
+                  </div>
+                </dl>
                 <p>Скорректировали цену и подачу объявления, нашли покупателя без затяжных торгов.</p>
               </div>
             </article>
             <article class="case-card reveal">
-              <div class="case-photo case-photo-warm"></div>
+              <div class="case-photo">
+                <img src="assets/photos/case-house.jpg" alt="Дом в Мозырском районе, подготовленный к продаже" loading="lazy" />
+                <span class="case-check" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" focusable="false">
+                    <path d="m8 17 5 5L24 10" />
+                    <path d="m9 12 3-3" />
+                  </svg>
+                </span>
+              </div>
               <div class="case-body">
                 <span class="case-type">Дом</span>
                 <h3>Дом в Мозырском районе</h3>
-                <dl><div><dt>Задача</dt><dd>Срочно</dd></div><div><dt>Срок</dt><dd>14 дней</dd></div><div><dt>До</dt><dd>42 000 $</dd></div><div><dt>После</dt><dd>44 500 $</dd></div></dl>
+                <dl>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 6h20v20H6z" /><path d="M16 6v20M6 16h20" /></svg><span>Площадь</span></dt>
+                    <dd>118 м²</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="m7 17 10-10h8v8L15 25 7 17Z" /><path d="M22 10h.01" /></svg><span>До</span></dt>
+                    <dd>42 000 $</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 12h16a4 4 0 0 1 4 4v9H10a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h10" /><path d="M6 12 20 5v7" /><path d="M19 17h8v6h-8a3 3 0 0 1 0-6Z" /></svg><span>После</span></dt>
+                    <dd>44 500 $</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 25h20" /><path d="M9 22v-5M16 22v-9M23 22V9" /><path d="m19 9 4-4 4 4" /><path d="m6 17 6-6 4 4 9-9" /></svg><span>Результат</span></dt>
+                    <dd>+2 500 $</dd>
+                  </div>
+                </dl>
                 <p>Подготовили документы, сделали новую презентацию и вывели объект на покупателей из базы.</p>
               </div>
             </article>
             <article class="case-card reveal">
-              <div class="case-photo case-photo-dark"></div>
+              <div class="case-photo case-photo-overlay">
+                <img src="assets/photos/consultation.jpg" alt="Переговоры по продаже коммерческого объекта" loading="lazy" />
+                <span class="case-check" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" focusable="false">
+                    <path d="m8 17 5 5L24 10" />
+                    <path d="m9 12 3-3" />
+                  </svg>
+                </span>
+              </div>
               <div class="case-body">
                 <span class="case-type">Коммерческий объект</span>
                 <h3>Помещение в Калинковичах</h3>
-                <dl><div><dt>Задача</dt><dd>Продажа</dd></div><div><dt>Срок</dt><dd>21 день</dd></div><div><dt>До</dt><dd>31 000 $</dd></div><div><dt>После</dt><dd>33 000 $</dd></div></dl>
+                <dl>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 6h20v20H6z" /><path d="M16 6v20M6 16h20" /></svg><span>Площадь</span></dt>
+                    <dd>86 м²</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="m7 17 10-10h8v8L15 25 7 17Z" /><path d="M22 10h.01" /></svg><span>До</span></dt>
+                    <dd>31 000 $</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 12h16a4 4 0 0 1 4 4v9H10a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h10" /><path d="M6 12 20 5v7" /><path d="M19 17h8v6h-8a3 3 0 0 1 0-6Z" /></svg><span>После</span></dt>
+                    <dd>33 000 $</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 25h20" /><path d="M9 22v-5M16 22v-9M23 22V9" /><path d="m19 9 4-4 4 4" /><path d="m6 17 6-6 4 4 9-9" /></svg><span>Результат</span></dt>
+                    <dd>+2 000 $</dd>
+                  </div>
+                </dl>
                 <p>Собрали аргументы для бизнеса-покупателя и провели переговоры по условиям оплаты.</p>
               </div>
             </article>
             <article class="case-card reveal">
-              <div class="case-photo case-photo-green"></div>
+              <div class="case-photo">
+                <img src="assets/photos/case-apartment.jpg" alt="Интерьер объекта для обмена недвижимости" loading="lazy" />
+                <span class="case-check" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" focusable="false">
+                    <path d="m8 17 5 5L24 10" />
+                    <path d="m9 12 3-3" />
+                  </svg>
+                </span>
+              </div>
               <div class="case-body">
                 <span class="case-type">Обмен</span>
                 <h3>Обмен квартиры с доплатой</h3>
-                <dl><div><dt>Задача</dt><dd>Обмен</dd></div><div><dt>Срок</dt><dd>30 дней</dd></div><div><dt>Объект</dt><dd>3 комнаты</dd></div><div><dt>Результат</dt><dd>Новая квартира</dd></div></dl>
+                <dl>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 6h20v20H6z" /><path d="M16 6v20M6 16h20" /></svg><span>Объект</span></dt>
+                    <dd>3 комн.</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="m7 17 10-10h8v8L15 25 7 17Z" /><path d="M22 10h.01" /></svg><span>Срок</span></dt>
+                    <dd>30 дней</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 12h16a4 4 0 0 1 4 4v9H10a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h10" /><path d="M6 12 20 5v7" /><path d="M19 17h8v6h-8a3 3 0 0 1 0-6Z" /></svg><span>Задача</span></dt>
+                    <dd>Обмен</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 25h20" /><path d="M9 22v-5M16 22v-9M23 22V9" /><path d="m19 9 4-4 4 4" /><path d="m6 17 6-6 4 4 9-9" /></svg><span>Результат</span></dt>
+                    <dd>Сделка</dd>
+                  </div>
+                </dl>
                 <p>Синхронизировали продажу и покупку, помогли с документами и безопасными расчетами.</p>
+              </div>
+            </article>
+            <article class="case-card reveal">
+              <div class="case-photo">
+                <img src="assets/photos/hero-apartment.jpg" alt="Квартира после премиальной подготовки к продаже" loading="lazy" />
+                <span class="case-check" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" focusable="false">
+                    <path d="m8 17 5 5L24 10" />
+                    <path d="m9 12 3-3" />
+                  </svg>
+                </span>
+              </div>
+              <div class="case-body">
+                <span class="case-type">Квартира</span>
+                <h3>г. Мозырь, район Примостовой</h3>
+                <dl>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 6h20v20H6z" /><path d="M16 6v20M6 16h20" /></svg><span>Площадь</span></dt>
+                    <dd>63 м²</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="m7 17 10-10h8v8L15 25 7 17Z" /><path d="M22 10h.01" /></svg><span>До</span></dt>
+                    <dd>36 500 $</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 12h16a4 4 0 0 1 4 4v9H10a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h10" /><path d="M6 12 20 5v7" /><path d="M19 17h8v6h-8a3 3 0 0 1 0-6Z" /></svg><span>После</span></dt>
+                    <dd>38 200 $</dd>
+                  </div>
+                  <div>
+                    <dt><svg class="case-stat-icon" viewBox="0 0 32 32" focusable="false" aria-hidden="true"><path d="M6 25h20" /><path d="M9 22v-5M16 22v-9M23 22V9" /><path d="m19 9 4-4 4 4" /><path d="m6 17 6-6 4 4 9-9" /></svg><span>Результат</span></dt>
+                    <dd>+1 700 $</dd>
+                  </div>
+                </dl>
+                <p>Переупаковали объявление, обновили визуальную подачу и вывели объект в быстрые показы.</p>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section reviews" id="reviews">
+      <section class="section reviews" id="reviews" hidden>
         <div class="container">
           <div class="section-head reveal">
             <p class="eyebrow">Отзывы</p>
@@ -466,7 +819,7 @@
         </div>
       </section>
 
-      <section class="section media-docs">
+      <section class="section media-docs" id="media-docs">
         <div class="container">
           <div class="media-block reveal">
             <div class="section-head align-left">
@@ -523,7 +876,7 @@
         </div>
       </section>
 
-      <section class="section consultation" id="consultation">
+      <section class="section consultation" id="consultation" hidden>
         <div class="container form-section-grid">
           <div class="reveal">
             <p class="eyebrow">Консультация</p>
@@ -552,7 +905,7 @@
         </div>
       </section>
 
-      <section class="section faq" id="faq">
+      <section class="section faq" id="faq" hidden>
         <div class="container faq-grid">
           <div class="reveal">
             <p class="eyebrow">FAQ</p>
@@ -577,29 +930,53 @@
           <div class="section-head reveal">
             <p class="eyebrow">Контакты</p>
             <h2>Контакты</h2>
+            <p>Мы всегда на связи и готовы помочь вам с любыми вопросами</p>
           </div>
           <div class="contacts-grid">
             <div class="contact-panel reveal">
-              <article><span>Телефон</span><a href="tel:+375291451071">+375 29 145-10-71</a></article>
-              <article><span>Email</span><a href="mailto:reelter19@gmail.com">reelter19@gmail.com</a></article>
-              <article><span>Адрес</span><a href="https://yandex.ru/maps/?text=г.%20Мозырь%2C%20ул.%20Ленинская%2C%20д.%2011" target="_blank" rel="noopener">г. Мозырь, ул. Ленинская, д. 11</a></article>
-              <article><span>Часы работы</span><p>Пн — Пт с 9:00 до 18:00</p></article>
-              <article><span>Как добраться</span><p>Автобусы 16, 20, остановка «Главпочтамт»</p></article>
+              <article>
+                <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 48 48" focusable="false"><path d="M16 9 22 21l-5 3c3 6 7 10 13 13l3-5 12 6c-1 4-4 7-8 7C19 45 3 29 3 11c0-4 3-7 7-8Z" /></svg></span>
+                <span class="contact-copy"><span>Телефон</span><a href="tel:+375291451071">+375 29 145-10-71</a></span>
+              </article>
+              <article>
+                <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 48 48" focusable="false"><path d="M6 12h36v26H6z" /><path d="m8 14 16 14 16-14" /></svg></span>
+                <span class="contact-copy"><span>Email</span><a href="mailto:reelter19@gmail.com">reelter19@gmail.com</a></span>
+              </article>
+              <article>
+                <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 48 48" focusable="false"><path d="M24 44s14-13 14-25A14 14 0 1 0 10 19c0 12 14 25 14 25Z" /><path d="M24 24a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" /></svg></span>
+                <span class="contact-copy"><span>Адрес</span><a href="https://yandex.ru/maps/?text=г.%20Мозырь%2C%20ул.%20Ленинская%2C%20д.%2011" target="_blank" rel="noopener">г. Мозырь, ул. Ленинская, д. 11</a></span>
+              </article>
+              <article>
+                <span class="contact-icon contact-icon-active" aria-hidden="true"><svg viewBox="0 0 48 48" focusable="false"><path d="M24 43a19 19 0 1 0 0-38 19 19 0 0 0 0 38Z" /><path d="M24 14v12l8 6" /></svg></span>
+                <span class="contact-copy"><span>Часы работы</span><p>Пн — Пт с 9:00 до 18:00</p></span>
+              </article>
+              <article>
+                <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 48 48" focusable="false"><path d="M11 9h26a4 4 0 0 1 4 4v19a4 4 0 0 1-4 4H11a4 4 0 0 1-4-4V13a4 4 0 0 1 4-4Z" /><path d="M12 36v5M36 36v5M13 16h22M13 28h22M16 21h.01M32 21h.01" /></svg></span>
+                <span class="contact-copy"><span>Как добраться</span><p>Автобусы 16, 20, остановка «Главпочтамт»</p></span>
+              </article>
               <div class="contact-actions">
-                <a class="btn btn-primary" href="tel:+375291451071">Позвонить</a>
-                <button class="btn btn-light" type="button" data-open-modal data-modal-title="Написать в Telegram">Telegram</button>
-                <button class="btn btn-light" type="button" data-open-modal data-modal-title="Написать в WhatsApp">WhatsApp</button>
-                <button class="btn btn-light" type="button" data-open-modal data-modal-title="Написать в Viber">Viber</button>
-                <button class="btn btn-ghost" type="button" data-open-modal data-modal-title="Задать вопрос">Задать вопрос</button>
+                <a class="btn btn-primary" href="tel:+375291451071"><svg viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M16 9 22 21l-5 3c3 6 7 10 13 13l3-5 12 6c-1 4-4 7-8 7C19 45 3 29 3 11c0-4 3-7 7-8Z" /></svg>Позвонить</a>
+                <button class="btn btn-light" type="button" data-open-modal data-modal-title="Написать в Telegram"><svg viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M43 7 5 23l15 5 5 14 18-35Z" /><path d="m20 28 10-9" /></svg>Telegram</button>
+                <button class="btn btn-light" type="button" data-open-modal data-modal-title="Написать в WhatsApp"><svg viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M24 6a17 17 0 0 0-14 27L7 43l10-3A17 17 0 1 0 24 6Z" /><path d="M17 17c2 8 7 12 14 14l3-4-5-3-2 2c-3-1-5-3-6-6l2-2-3-5Z" /></svg>WhatsApp</button>
+                <button class="btn btn-light" type="button" data-open-modal data-modal-title="Написать в Viber"><svg viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M14 7h20a7 7 0 0 1 7 7v13a7 7 0 0 1-7 7h-8l-9 7v-7h-3a7 7 0 0 1-7-7V14a7 7 0 0 1 7-7Z" /><path d="M18 17c2 7 6 11 13 13l3-4-5-3-2 2c-3-1-4-2-5-5l2-2-3-4Z" /></svg>Viber</button>
+                <button class="btn btn-ghost" type="button" data-open-modal data-modal-title="Задать вопрос"><svg viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M7 10h34v24H18L8 42V34H7z" /><path d="M16 19h16M16 26h11" /></svg>Задать вопрос</button>
               </div>
             </div>
 
             <div class="map-card reveal" aria-label="Карта офиса">
-              <div class="map-pin"></div>
+              <div class="map-visual">
+                <iframe
+                  class="map-frame"
+                  src="https://yandex.ru/map-widget/v1/?mode=search&amp;text=%D0%B3.%20%D0%9C%D0%BE%D0%B7%D1%8B%D1%80%D1%8C%2C%20%D1%83%D0%BB.%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%2C%20%D0%B4.%2011&amp;z=17"
+                  title="Карта: г. Мозырь, ул. Ленинская, д. 11"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen
+                ></iframe>
+              </div>
               <div class="map-office">
-                <span>Центральный офис</span>
-                <strong>ул. Ленинская, д. 11</strong>
-                <p>Мозырь</p>
+                <span class="map-office-icon" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path d="M14 56V12h26v44" /><path d="M40 28h12v28" /><path d="M22 22h5M22 32h5M22 42h5M34 22h5M34 32h5M34 42h5M48 38h4M48 48h4M10 56h48" /></svg></span>
+                <span class="map-office-copy"><span>Центральный офис</span><strong>ул. Ленинская, д. 11</strong><p>Мозырь, Гомельская область</p></span>
               </div>
             </div>
           </div>
@@ -610,9 +987,6 @@
     <footer class="footer">
       <div class="container footer-grid">
         <div>
-          <a class="brand footer-brand" href="#top" aria-label="ТР | Твой риэлтер">
-            <img class="brand-logo" src="assets/logo.png" alt="Твой риэлтер" />
-          </a>
           <p>Современное агентство недвижимости в Мозыре: оценка, продажа, покупка, обмен, аренда и юридическое сопровождение.</p>
         </div>
         <nav aria-label="Меню в подвале">
@@ -649,7 +1023,7 @@
 
     <div class="mobile-actions" aria-label="Быстрые действия">
       <a href="tel:+375291451071">Позвонить</a>
-      <a href="#valuation">Оценить объект</a>
+      <a href="#valuation">Оценить</a>
     </div>
 
     <div class="modal" data-modal hidden>

@@ -190,7 +190,7 @@ if (quiz) {
     if (progress) progress.style.width = `${((currentStep + 1) / steps.length) * 100}%`;
     if (prevButton) prevButton.disabled = currentStep === 0;
     if (nextButton) nextButton.hidden = currentStep === steps.length - 1;
-    if (submitButton) submitButton.hidden = currentStep !== steps.length - 1;
+    if (submitButton) submitButton.hidden = false;
     if (error) error.hidden = true;
   };
 
@@ -237,6 +237,15 @@ if (quiz) {
     updateQuiz();
   });
 
+  submitButton?.addEventListener("click", (event) => {
+    if (currentStep === steps.length - 1) return;
+
+    event.preventDefault();
+    if (!validateStep()) return;
+    currentStep = Math.min(currentStep + 1, steps.length - 1);
+    updateQuiz();
+  });
+
   quiz.addEventListener("submit", (event) => {
     event.preventDefault();
     if (!validateStep() || !quiz.reportValidity()) return;
@@ -256,3 +265,70 @@ if (quiz) {
 
   updateQuiz();
 }
+
+document.querySelectorAll(".cases .case-grid, .documents-block .docs-grid").forEach((slider) => {
+  const cards = [...slider.children].filter((card) => card.matches(".case-card, article"));
+  if (!cards.length) return;
+
+  let centers = [];
+  let frame = 0;
+  let activeIndex = -1;
+
+  const measureCases = () => {
+    centers = cards.map((card) => card.offsetLeft + card.offsetWidth / 2);
+  };
+
+  const updateCaseScale = () => {
+    frame = 0;
+    const sliderCenter = slider.scrollLeft + slider.clientWidth / 2;
+    const fadeDistance = Math.max(slider.clientWidth * 0.9, 300);
+    let centerIndex = 0;
+    let closestDistance = Infinity;
+
+    centers.forEach((cardCenter, index) => {
+      const distance = Math.abs(cardCenter - sliderCenter);
+      const depth = Math.min(distance / fadeDistance, 1);
+      const opacity = 0.3 + Math.pow(1 - depth, 1.18) * 0.7;
+      const brightness = 0.48 + opacity * 0.52;
+      const saturation = 0.68 + opacity * 0.32;
+
+      cards[index].style.setProperty("--case-opacity", opacity.toFixed(3));
+      cards[index].style.setProperty("--case-brightness", brightness.toFixed(3));
+      cards[index].style.setProperty("--case-saturation", saturation.toFixed(3));
+
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        centerIndex = index;
+      }
+    });
+
+    if (centerIndex === activeIndex) return;
+    activeIndex = centerIndex;
+
+    cards.forEach((card, index) => {
+      card.classList.toggle("is-center", index === centerIndex);
+    });
+  };
+
+  const scheduleCaseScale = () => {
+    if (frame) return;
+    frame = requestAnimationFrame(updateCaseScale);
+  };
+
+  slider.addEventListener("scroll", scheduleCaseScale, { passive: true });
+  window.addEventListener("resize", () => {
+    measureCases();
+    scheduleCaseScale();
+  });
+
+  if ("ResizeObserver" in window) {
+    const caseObserver = new ResizeObserver(() => {
+      measureCases();
+      scheduleCaseScale();
+    });
+    caseObserver.observe(slider);
+  }
+
+  measureCases();
+  updateCaseScale();
+});
