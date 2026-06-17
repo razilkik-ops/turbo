@@ -25,6 +25,14 @@
         <span></span>
       </button>
 
+      <a class="brand" href="#top" aria-label="Твой риэлтер">
+        <img class="brand-logo" src="assets/logo-minimal.svg" alt="Логотип агентства Твой риэлтер" />
+        <span class="brand-copy">
+          <strong>Твой риэлтер</strong>
+          <small>Агентство недвижимости в Мозыре</small>
+        </span>
+      </a>
+
       <nav class="nav" aria-label="Основное меню">
         <a href="#services">Услуги</a>
         <a href="#valuation">Оценка онлайн</a>
@@ -46,6 +54,16 @@
       <section class="hero section">
         <div class="container hero-grid">
           <div class="hero-copy reveal">
+            <div class="hero-topline">
+              <div class="hero-brand-lockup" aria-label="Бренд агентства">
+                <img class="hero-brand-logo" src="assets/logo-minimal.svg" alt="Логотип агентства Твой риэлтер" />
+                <div class="hero-brand-copy">
+                  <strong>Твой риэлтер</strong>
+                  <span>Агентство недвижимости в Мозыре</span>
+                </div>
+              </div>
+              <a class="hero-phone" href="tel:+375291451071">+375 29 145-10-71</a>
+            </div>
             <p class="eyebrow">Премиальная продажа недвижимости</p>
             <h1>Продадим объект дороже с сильной упаковкой и точной стратегией</h1>
             <p class="hero-lead">
@@ -822,13 +840,26 @@
       <section class="section media-docs" id="media-docs">
         <div class="container">
           <div class="media-block reveal">
-            <div class="section-head align-left">
-              <p class="eyebrow">Доверие</p>
-              <h2>О нас говорят СМИ</h2>
+            <div class="media-copy">
+              <p class="eyebrow">Продвижение</p>
+              <h2>Ваше объявление увидят более 1000 целевых пользователей в день</h2>
+              <ul class="media-points">
+                <li>Размещаем платные объявления на онлайн-площадках.</li>
+                <li>Оптимизируем объявления для максимального охвата потенциальных покупателей.</li>
+                <li>Ваше объявление увидят тысячи посетителей площадок.</li>
+              </ul>
             </div>
-            <div class="media-grid">
-              <article class="media-card"><span>YouTube</span><h3>Интервью и разборы рынка</h3><button class="text-link" type="button" data-open-modal data-modal-title="Смотреть материалы">Смотреть</button></article>
-              <article class="media-card"><span>glaza.info</span><h3>Публикации о недвижимости</h3><button class="text-link" type="button" data-open-modal data-modal-title="Читать материалы">Читать</button></article>
+            <div class="media-grid media-grid-platforms" aria-label="Площадки продвижения">
+              <article class="media-card"><span>Realt</span><h3>Премиальные размещения</h3></article>
+              <article class="media-card"><span>Instagram</span><h3>Таргет для локального спроса</h3></article>
+              <article class="media-card"><span>TikTok</span><h3>Видео-охват и показы</h3></article>
+              <article class="media-card"><span>Яндекс</span><h3>Поисковый и картографический трафик</h3></article>
+              <article class="media-card"><span>Google</span><h3>Контекст и брендовый спрос</h3></article>
+              <article class="media-card"><span>Facebook</span><h3>Дополнительный платный охват</h3></article>
+              <article class="media-card"><span>Onliner</span><h3>Трафик с популярных каталогов</h3></article>
+              <article class="media-card"><span>ProfiRealt</span><h3>Нишевые просмотры по объектам</h3></article>
+              <article class="media-card"><span>GoHome</span><h3>Дополнительная витрина объекта</h3></article>
+              <article class="media-card"><span>Kufar</span><h3>Локальные покупатели и лиды</h3></article>
             </div>
           </div>
 
@@ -956,9 +987,9 @@
               </article>
               <div class="contact-actions">
                 <a class="btn btn-primary" href="tel:+375291451071"><svg viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M16 9 22 21l-5 3c3 6 7 10 13 13l3-5 12 6c-1 4-4 7-8 7C19 45 3 29 3 11c0-4 3-7 7-8Z" /></svg>Позвонить</a>
-                <button class="btn btn-light" type="button" data-open-modal data-modal-title="Написать в Telegram"><svg viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M43 7 5 23l15 5 5 14 18-35Z" /><path d="m20 28 10-9" /></svg>Telegram</button>
-                <button class="btn btn-light" type="button" data-open-modal data-modal-title="Написать в WhatsApp"><svg viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M24 6a17 17 0 0 0-14 27L7 43l10-3A17 17 0 1 0 24 6Z" /><path d="M17 17c2 8 7 12 14 14l3-4-5-3-2 2c-3-1-5-3-6-6l2-2-3-5Z" /></svg>WhatsApp</button>
-                <button class="btn btn-light" type="button" data-open-modal data-modal-title="Написать в Viber"><svg viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M14 7h20a7 7 0 0 1 7 7v13a7 7 0 0 1-7 7h-8l-9 7v-7h-3a7 7 0 0 1-7-7V14a7 7 0 0 1 7-7Z" /><path d="M18 17c2 7 6 11 13 13l3-4-5-3-2 2c-3-1-4-2-5-5l2-2-3-4Z" /></svg>Viber</button>
+                <a class="btn btn-light" href="tg://resolve?phone=375291451071"><svg viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M43 7 5 23l15 5 5 14 18-35Z" /><path d="m20 28 10-9" /></svg>Telegram</a>
+                <a class="btn btn-light" href="https://wa.me/375291451071" target="_blank" rel="noopener"><svg viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M24 6a17 17 0 0 0-14 27L7 43l10-3A17 17 0 1 0 24 6Z" /><path d="M17 17c2 8 7 12 14 14l3-4-5-3-2 2c-3-1-5-3-6-6l2-2-3-5Z" /></svg>WhatsApp</a>
+                <a class="btn btn-light" href="viber://chat?number=%2B375291451071"><svg viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M14 7h20a7 7 0 0 1 7 7v13a7 7 0 0 1-7 7h-8l-9 7v-7h-3a7 7 0 0 1-7-7V14a7 7 0 0 1 7-7Z" /><path d="M18 17c2 7 6 11 13 13l3-4-5-3-2 2c-3-1-4-2-5-5l2-2-3-4Z" /></svg>Viber</a>
                 <button class="btn btn-ghost" type="button" data-open-modal data-modal-title="Задать вопрос"><svg viewBox="0 0 48 48" focusable="false" aria-hidden="true"><path d="M7 10h34v24H18L8 42V34H7z" /><path d="M16 19h16M16 26h11" /></svg>Задать вопрос</button>
               </div>
             </div>
@@ -967,7 +998,7 @@
               <div class="map-visual">
                 <iframe
                   class="map-frame"
-                  src="https://yandex.ru/map-widget/v1/?mode=search&amp;text=%D0%B3.%20%D0%9C%D0%BE%D0%B7%D1%8B%D1%80%D1%8C%2C%20%D1%83%D0%BB.%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%2C%20%D0%B4.%2011&amp;z=17"
+                  src="https://yandex.ru/map-widget/v1/?mode=search&amp;text=%D0%A2%D0%B2%D0%BE%D0%B9%20%D1%80%D0%B8%D1%8D%D0%BB%D1%82%D0%B5%D1%80%2C%20%D0%B3.%20%D0%9C%D0%BE%D0%B7%D1%8B%D1%80%D1%8C%2C%20%D1%83%D0%BB.%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%2C%2011&amp;z=18"
                   title="Карта: г. Мозырь, ул. Ленинская, д. 11"
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
@@ -987,6 +1018,13 @@
     <footer class="footer">
       <div class="container footer-grid">
         <div>
+          <a class="brand footer-brand" href="#top" aria-label="Твой риэлтер">
+            <img class="brand-logo" src="assets/logo-minimal.svg" alt="Логотип агентства Твой риэлтер" />
+            <span class="brand-copy">
+              <strong>Твой риэлтер</strong>
+              <small>Агентство недвижимости в Мозыре</small>
+            </span>
+          </a>
           <p>Современное агентство недвижимости в Мозыре: оценка, продажа, покупка, обмен, аренда и юридическое сопровождение.</p>
         </div>
         <nav aria-label="Меню в подвале">
@@ -1006,9 +1044,9 @@
           <a href="mailto:reelter19@gmail.com">reelter19@gmail.com</a>
           <p>г. Мозырь, ул. Ленинская, д. 11</p>
           <div class="footer-socials" aria-label="Соцсети и мессенджеры">
-            <button type="button" data-open-modal data-modal-title="Написать в Telegram">Telegram</button>
-            <button type="button" data-open-modal data-modal-title="Написать в WhatsApp">WhatsApp</button>
-            <button type="button" data-open-modal data-modal-title="Написать в Viber">Viber</button>
+            <a href="tg://resolve?phone=375291451071">Telegram</a>
+            <a href="https://wa.me/375291451071" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="viber://chat?number=%2B375291451071">Viber</a>
           </div>
         </div>
       </div>
