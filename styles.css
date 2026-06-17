@@ -6204,3 +6204,327 @@ dd {
     font-size: 14px;
   }
 }
+
+/* Final responsive polish */
+.hero .reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.brand,
+.hero-brand-lockup,
+.footer-brand {
+  min-width: 0;
+}
+
+.brand-copy,
+.hero-brand-copy {
+  min-width: 0;
+}
+
+.brand-copy strong,
+.hero-brand-copy strong {
+  overflow-wrap: anywhere;
+}
+
+.footer-brand {
+  align-items: center;
+}
+
+.footer .brand-logo {
+  width: auto;
+  height: 52px;
+  max-height: 52px;
+}
+
+.footer .brand-copy small {
+  display: block;
+}
+
+@media (max-width: 1180px) {
+  .site-header {
+    gap: 14px;
+    padding-inline: 16px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand-logo {
+    height: 50px;
+    max-height: 50px;
+  }
+
+  .brand-copy strong {
+    font-size: 13px;
+  }
+
+  .header-actions {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 960px) {
+  .hero {
+    padding-top: 136px;
+  }
+
+  .hero-grid {
+    gap: 28px;
+    align-items: start;
+  }
+
+  .hero-copy,
+  .hero-panel {
+    max-width: none;
+  }
+
+  .hero-topline {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .hero-brand-lockup {
+    width: 100%;
+  }
+
+  .hero-phone {
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  .quiz-layout,
+  .contacts-grid,
+  .media-block {
+    gap: 24px;
+  }
+
+  .footer-grid {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 760px) {
+  body {
+    padding-bottom: 98px;
+  }
+
+  .site-header {
+    align-items: center;
+    padding: 8px;
+    gap: 8px 10px;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .brand-logo {
+    height: 42px;
+    max-height: 42px;
+  }
+
+  .brand-copy strong {
+    font-size: 12px;
+    letter-spacing: 0.03em;
+  }
+
+  .site-header.menu-open {
+    align-items: stretch;
+  }
+
+  .header-actions {
+    min-width: 0;
+  }
+
+  .nav {
+    grid-column: 1 / -1;
+    justify-content: stretch;
+    justify-self: stretch;
+  }
+
+  .site-header.menu-open .nav {
+    display: grid;
+    justify-items: stretch;
+    width: 100%;
+  }
+
+  .nav a {
+    width: 100%;
+    padding-inline: 0;
+  }
+
+  .phone-link {
+    max-width: none;
+    min-height: 40px;
+    padding: 0 10px;
+    font-size: 11px;
+  }
+
+  .hero {
+    padding-top: 124px;
+    padding-bottom: 48px;
+  }
+
+  .hero-grid {
+    gap: 20px;
+  }
+
+  .hero-copy,
+  .hero-panel {
+    max-width: none;
+  }
+
+  .hero-topline {
+    margin-bottom: 18px;
+  }
+
+  .hero-brand-lockup {
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .hero-brand-logo {
+    width: 46px;
+    height: 40px;
+  }
+
+  .hero-brand-copy strong {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+  }
+
+  .hero-brand-copy span {
+    font-size: 10px;
+  }
+
+  .hero-lead {
+    font-size: 15px;
+  }
+
+  .badge-row {
+    gap: 10px;
+  }
+
+  .badge-row span {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .hero-cta-row {
+    display: grid;
+    gap: 10px;
+  }
+
+  .lead-card {
+    padding: 18px;
+  }
+
+  .stats-grid {
+    gap: 10px;
+  }
+
+  .service-grid,
+  .benefit-grid,
+  .feature-list,
+  .media-grid-platforms {
+    grid-template-columns: 1fr;
+  }
+
+  .media-block {
+    gap: 20px;
+  }
+
+  .contact-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-actions .btn:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .footer-brand {
+    width: 100%;
+  }
+
+  .footer .brand-logo {
+    height: 46px;
+    max-height: 46px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    gap: 8px;
+  }
+
+  .mobile-actions {
+    left: 12px;
+    right: 12px;
+    width: auto;
+    max-width: none;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mobile-actions a {
+    min-height: 52px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    grid-template-columns: 44px minmax(0, 1fr);
+  }
+
+  .header-actions {
+    grid-column: 2;
+    justify-content: flex-end;
+  }
+
+  .phone-link {
+    max-width: 124px;
+  }
+
+  .hero-phone {
+    width: 100%;
+  }
+
+  .contact-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-actions .btn:last-child {
+    grid-column: auto;
+  }
+
+  .map-office {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    padding: 16px;
+  }
+
+  .map-office strong {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand-copy strong {
+    font-size: 11px;
+  }
+
+  .phone-link {
+    font-size: 10px;
+  }
+
+  .hero-brand-copy strong {
+    font-size: 11px;
+  }
+}

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 230" role="img" aria-labelledby="logo-title">
-  <title id="logo-title">Твой риэлтер</title>
+  <title id="logo-title">Линия Закона</title>
   <defs>
     <linearGradient id="logoBlue" x1="165" y1="18" x2="165" y2="150" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#1fcdf5"/>
@@ -28,9 +28,9 @@
     y="214"
     fill="#12acec"
     font-family="Manrope, Arial, sans-serif"
-    font-size="42"
+    font-size="32"
     font-weight="500"
-    letter-spacing="2"
+    letter-spacing="1.2"
     text-anchor="middle"
-  >ТВОЙ РИЭЛТЕР</text>
+  >ЛИНИЯ ЗАКОНА</text>
 </svg>
