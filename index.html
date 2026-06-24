@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
     <link rel="preload" as="image" href="assets/photos/hero-apartment.jpg" />
-    <link rel="stylesheet" href="styles.css?v=20260617-3" />
+    <link rel="stylesheet" href="styles.css?v=20260624-7" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -44,7 +44,7 @@
       </nav>
 
       <div class="header-actions">
-        <button class="btn btn-ghost btn-small" type="button" data-open-modal data-modal-title="Задать вопрос">Задать вопрос</button>
+        <a class="btn btn-ghost btn-small" href="tel:+375291451071">+375 29 145-10-71</a>
         <button class="btn btn-primary btn-small" type="button" data-open-modal data-modal-title="Заказать звонок">Заказать звонок</button>
       </div>
     </header>
@@ -69,6 +69,7 @@
             <div class="hero-cta-row">
               <a class="btn btn-primary" href="#valuation">Оценить объект</a>
               <button class="btn btn-light" type="button" data-open-modal data-modal-title="Заказать звонок">Заказать звонок</button>
+              <button class="btn btn-light" type="button" data-open-modal data-modal-title="База покупателей">База покупателей</button>
             </div>
           </div>
 
@@ -86,7 +87,7 @@
               </label>
               <label class="check">
                 <input type="checkbox" name="agreement" required />
-                <span>Согласен на обработку персональных данных</span>
+                <span>Согласен на обработку персональных данных и ознакомлен с <a href="privacy.html">Политикой конфиденциальности</a></span>
               </label>
               <button class="btn btn-primary" type="submit">Узнать стоимость</button>
               <p class="form-success" role="status" hidden>Спасибо. Мы свяжемся с вами и подготовим оценку.</p>
@@ -454,7 +455,7 @@
               </div>
               <label class="check">
                 <input type="checkbox" name="agreement" required />
-                <span>Согласен на обработку персональных данных</span>
+                <span>Согласен на обработку персональных данных и ознакомлен с <a href="privacy.html">Политикой конфиденциальности</a></span>
               </label>
             </div>
 
@@ -918,7 +919,7 @@
               <label><span>Город</span><select name="city" required><option value="">Выберите</option><option>Мозырь</option><option>Калинковичи</option><option>Петриков</option><option>Гомель</option><option>Другой город</option></select></label>
             </div>
             <label><span>Комментарий</span><textarea name="comment" rows="4" placeholder="Коротко опишите ситуацию"></textarea></label>
-            <label class="check"><input type="checkbox" name="agreement" required /><span>Согласен на обработку персональных данных</span></label>
+            <label class="check"><input type="checkbox" name="agreement" required /><span>Согласен на обработку персональных данных и ознакомлен с <a href="privacy.html">Политикой конфиденциальности</a></span></label>
             <button class="btn btn-primary" type="submit">Получить консультацию</button>
             <p class="form-success" role="status" hidden>Спасибо. Заявка принята, мы скоро свяжемся.</p>
           </form>
@@ -1040,9 +1041,11 @@
         </div>
       </div>
       <div class="container footer-bottom">
-        <span>ООО «Линия Закона»</span>
-        <span>© 2019–2026</span>
-        <button type="button" data-open-modal data-modal-title="Политика обработки персональных данных">Политика обработки персональных данных</button>
+        <span>ОДО «Недвижимость Линия Закона»</span>
+        <span>© 2008–2026</span>
+        <div class="footer-legal-links">
+          <a class="footer-policy-link" href="privacy.html">Политика конфиденциальности</a>
+        </div>
       </div>
     </footer>
 
@@ -1072,7 +1075,7 @@
             </select>
           </label>
           <label><span>Комментарий</span><textarea name="comment" rows="4" placeholder="Напишите, чем можем помочь"></textarea></label>
-          <label class="check"><input type="checkbox" name="agreement" required /><span>Согласен на обработку персональных данных</span></label>
+          <label class="check"><input type="checkbox" name="agreement" required /><span>Согласен на обработку персональных данных и ознакомлен с <a href="privacy.html">Политикой конфиденциальности</a></span></label>
           <button class="btn btn-primary" type="submit">Отправить</button>
           <p class="form-success" role="status" hidden>Спасибо. Заявка отправлена, мы скоро свяжемся.</p>
         </form>
