@@ -190,7 +190,7 @@ if (quiz) {
     if (progress) progress.style.width = `${((currentStep + 1) / steps.length) * 100}%`;
     if (prevButton) prevButton.disabled = currentStep === 0;
     if (nextButton) nextButton.hidden = currentStep === steps.length - 1;
-    if (submitButton) submitButton.hidden = false;
+    if (submitButton) submitButton.hidden = currentStep !== steps.length - 1;
     if (error) error.hidden = true;
   };
 
