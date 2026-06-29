@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
     <link rel="preload" as="image" href="assets/photos/hero-apartment.jpg" />
-    <link rel="stylesheet" href="styles.css?v=20260624-10" />
+    <link rel="stylesheet" href="styles.css?v=20260629-13" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -39,7 +39,7 @@
         <a href="#benefits">Преимущества</a>
         <a href="#process">Этапы</a>
         <a href="#cases">Кейсы</a>
-        <a href="#media-docs">Документы</a>
+        <a href="#documents">Документы</a>
         <a href="#contacts">Контакты</a>
       </nav>
 
@@ -64,6 +64,11 @@
               <span>Точная рыночная оценка</span>
               <span>Без предоплаты</span>
               <span>Сделка под юридическим контролем</span>
+            </div>
+
+            <div class="hero-proof">
+              <strong>Продадим за 28 дней</strong>
+              <span>Подключаем рекламу, базу покупателей и понятный план продажи уже с первого дня.</span>
             </div>
 
             <div class="hero-cta-row">
@@ -853,44 +858,28 @@
             </div>
           </div>
 
-          <div class="documents-block reveal">
+          <div class="documents-block reveal" id="documents">
             <div class="section-head">
               <p class="eyebrow">Документы</p>
               <h2>Свидетельства и лицензии</h2>
-              <p>Реальные документы агентства и свидетельства об аттестации специалистов.</p>
+              <p>Показываем ключевые документы агентства: аттестат специалиста, действующую лицензию и страховой полис.</p>
             </div>
             <div class="docs-grid">
               <article>
-                <img src="assets/docs/registration.png" alt="Свидетельство о государственной регистрации агентства недвижимости" loading="lazy" />
-                <h3>Свидетельство о гос. регистрации</h3>
+                <img src="assets/docs/attestation-leonov.png" alt="Свидетельство об аттестации риэлтера Леонова Олега Александровича" loading="lazy" />
+                <h3>Свидетельство об аттестации риэлтера Леонов О.А.</h3>
+                <p>Аттестованный специалист по риэлтерской деятельности для сопровождения сделок и консультаций.</p>
               </article>
               <article>
                 <img src="assets/docs/license.png" alt="Специальное разрешение лицензия на риэлтерскую деятельность" loading="lazy" />
                 <h3>Специальное разрешение (лицензия)</h3>
+                <p>Министерство юстиции РБ. Лицензия № 02240/177, статус: действующая. Место оказания услуг в Мозыре: ул. Ленинская, 11, офис 3.</p>
+                <a class="doc-link" href="https://license.gov.by/onelicense/189778" target="_blank" rel="noopener noreferrer">Проверить в Едином реестре лицензий</a>
               </article>
               <article>
-                <img src="assets/docs/insurance.png" alt="Страховой полис агентства недвижимости" loading="lazy" />
+                <img src="assets/docs/pol.webp" alt="Страховой полис агентства недвижимости" loading="lazy" />
                 <h3>Страховой полис</h3>
-              </article>
-              <article>
-                <img src="assets/docs/attestation-leonov.png" alt="Свидетельство об аттестации риэлтера Леонова Олега Александровича" loading="lazy" />
-                <h3>Свидетельство об аттестации риэлтера Леонов О.А.</h3>
-              </article>
-              <article>
-                <img src="assets/docs/attestation-sonkin.png" alt="Свидетельство об аттестации риэлтера Сонкина Игоря Геннадьевича" loading="lazy" />
-                <h3>Свидетельство об аттестации риэлтера Сонкин И.Г.</h3>
-              </article>
-              <article>
-                <img src="assets/docs/attestation-stoma.png" alt="Свидетельство об аттестации риэлтера Стома Ю.Н." loading="lazy" />
-                <h3>Свидетельство об аттестации риэлтера Стома Ю.Н.</h3>
-              </article>
-              <article>
-                <img src="assets/docs/attestation-kozhemyakin.png" alt="Свидетельство об аттестации риэлтера Кожемякин В.В." loading="lazy" />
-                <h3>Свидетельство об аттестации риэлтера Кожемякин В.В.</h3>
-              </article>
-              <article>
-                <img src="assets/docs/attestation-chikunov.png" alt="Свидетельство об аттестации риэлтера Чикунов А.М." loading="lazy" />
-                <h3>Свидетельство об аттестации риэлтера Чикунов А.М.</h3>
+                <p>Действующий страховой полис профессиональной ответственности агентства недвижимости.</p>
               </article>
             </div>
           </div>
@@ -1047,6 +1036,7 @@
           <a class="footer-policy-link" href="privacy.html">Политика конфиденциальности</a>
         </div>
       </div>
+      <div class="container footer-trust">Нам доверяют - проверено временем!</div>
     </footer>
 
     <button class="floating-call" type="button" data-open-modal data-modal-title="Заказать звонок">Заказать звонок</button>
@@ -1065,23 +1055,28 @@
         <form data-form data-form-name="callback-modal">
           <label><span>Имя</span><input type="text" name="name" placeholder="Ваше имя" required /></label>
           <label><span>Телефон</span><input type="tel" name="phone" placeholder="+375 (__) ___-__-__" required /></label>
-          <label>
-            <span>Способ связи</span>
-            <select name="contact_method" required>
-              <option>Телефон</option>
-              <option>WhatsApp</option>
-              <option>Telegram</option>
-              <option>Viber</option>
-            </select>
-          </label>
+          <div class="contact-methods">
+            <span class="contact-methods-label">Способ связи</span>
+            <div class="option-grid option-grid-contact">
+              <label><input type="radio" name="contact_method" value="Телефон" required /><span>Телефон</span></label>
+              <label><input type="radio" name="contact_method" value="WhatsApp" /><span>WhatsApp</span></label>
+              <label><input type="radio" name="contact_method" value="Telegram" /><span>Telegram</span></label>
+              <label><input type="radio" name="contact_method" value="Viber" /><span>Viber</span></label>
+            </div>
+          </div>
           <label><span>Комментарий</span><textarea name="comment" rows="4" placeholder="Напишите, чем можем помочь"></textarea></label>
           <label class="check"><input type="checkbox" name="agreement" required /><span>Согласен на обработку персональных данных и ознакомлен с <a href="privacy.html">Политикой конфиденциальности</a></span></label>
           <button class="btn btn-primary" type="submit">Отправить</button>
           <p class="form-success" role="status" hidden>Спасибо. Заявка отправлена, мы скоро свяжемся.</p>
         </form>
+        <div class="modal-success" data-modal-success hidden>
+          <h2>Заявка отправлена</h2>
+          <p>Мы получили ваши данные и свяжемся с вами удобным способом в ближайшее время.</p>
+          <button class="btn btn-primary" type="button" data-close-modal>Закрыть</button>
+        </div>
       </div>
     </div>
 
-    <script src="script.js?v=20260624-4"></script>
+    <script src="script.js?v=20260629-7"></script>
   </body>
 </html>

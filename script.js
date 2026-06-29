@@ -3,6 +3,8 @@ const menuToggle = document.querySelector("[data-menu-toggle]");
 const modal = document.querySelector("[data-modal]");
 const modalTitle = document.querySelector("#modal-title");
 const modalDialog = document.querySelector(".modal-dialog");
+const modalForm = modal?.querySelector("form");
+const modalSuccess = modal?.querySelector("[data-modal-success]");
 let lastFocusedElement = null;
 
 const updateHeader = () => {
@@ -60,17 +62,22 @@ if ("IntersectionObserver" in window) {
 const getFocusableElements = (container) =>
   [...container.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')];
 
+const resetModalState = () => {
+  if (modalForm) modalForm.hidden = false;
+  if (modalSuccess) modalSuccess.hidden = true;
+};
+
 const openModal = (title = "Заказать звонок", opener = document.activeElement) => {
   if (!modal || !modalTitle) return;
   lastFocusedElement = opener;
   modalTitle.textContent = title;
   modal.hidden = false;
   document.body.classList.add("modal-open");
+  resetModalState();
 
-  const form = modal.querySelector("form");
-  if (form) {
-    form.reset();
-    form.querySelectorAll(".form-success").forEach((message) => {
+  if (modalForm) {
+    modalForm.reset();
+    modalForm.querySelectorAll(".form-success").forEach((message) => {
       message.hidden = true;
     });
   }
@@ -83,6 +90,7 @@ const closeModal = () => {
   if (!modal) return;
   modal.hidden = true;
   document.body.classList.remove("modal-open");
+  resetModalState();
   if (lastFocusedElement && typeof lastFocusedElement.focus === "function") {
     lastFocusedElement.focus();
   }
@@ -151,10 +159,16 @@ document.querySelectorAll("[data-form]").forEach((form) => {
 
     console.log("Форма отправлена:", payload);
 
-    form.querySelectorAll(".form-success").forEach((message) => {
-      message.hidden = false;
-    });
-    form.reset();
+    if (form === modalForm && modalSuccess && modalTitle) {
+      form.hidden = true;
+      modalSuccess.hidden = false;
+      modalTitle.textContent = "Спасибо";
+    } else {
+      form.querySelectorAll(".form-success").forEach((message) => {
+        message.hidden = false;
+      });
+      form.reset();
+    }
   });
 });
 
