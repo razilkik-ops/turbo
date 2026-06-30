@@ -3753,7 +3753,15 @@ dd {
     0 8px 16px rgba(0, 0, 0, 0.54);
 }
 
-.valuation .quiz-copy h2 span {
+.valuation .quiz-copy h2 > span {
+  display: block;
+}
+
+.valuation .quiz-copy h2 .nowrap-line {
+  white-space: nowrap;
+}
+
+.valuation .quiz-copy h2 .accent-line {
   color: #d7aa52;
   text-shadow: 0 8px 16px rgba(215, 170, 82, 0.22);
 }
