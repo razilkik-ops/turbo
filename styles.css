@@ -7020,3 +7020,182 @@ dd {
     font-size: 11px;
   }
 }
+
+/* Desktop adaptive pass */
+@media (max-width: 1460px) {
+  .site-header {
+    width: min(1240px, calc(100% - 24px));
+    gap: 14px;
+    padding: 10px 12px;
+  }
+
+  .nav {
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .header-actions .btn-small {
+    padding-inline: 14px;
+  }
+
+  .hero {
+    padding-top: 136px;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(340px, 0.88fr);
+    gap: 32px;
+    align-items: start;
+  }
+
+  .benefits .container,
+  .services .container,
+  .valuation .container,
+  .process .container,
+  .cases .container,
+  .contacts .container {
+    width: min(var(--container), calc(100% - 56px));
+  }
+
+  .benefit-grid,
+  .services .service-grid,
+  .docs-grid,
+  .documents-block .docs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .documents-block .docs-grid {
+    display: grid;
+    width: 100%;
+    padding: 0;
+    overflow: visible;
+    scroll-padding-inline: 0;
+    scroll-snap-type: none;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .documents-block .docs-grid article {
+    flex: none;
+    opacity: 1;
+    filter: none;
+    transform: none;
+    will-change: auto;
+  }
+
+  .benefit-card,
+  .services .service-card {
+    min-height: auto;
+  }
+
+  .valuation {
+    min-height: auto;
+    padding: 88px 0 96px;
+  }
+
+  .valuation .quiz-layout {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .valuation .quiz-copy,
+  .valuation .quiz-card,
+  .valuation .callout {
+    width: 100%;
+    max-width: none;
+  }
+
+  .valuation .quiz-copy {
+    padding-top: 0;
+  }
+
+  .valuation .quiz-card {
+    min-height: auto;
+  }
+
+  .valuation .option-grid span {
+    white-space: normal;
+  }
+
+  .valuation .quiz-actions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .process {
+    min-height: auto;
+    padding: 76px 0;
+  }
+
+  .process .timeline {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+    gap: 72px 28px;
+  }
+
+  .process .timeline::before,
+  .process .timeline::after,
+  .process .timeline-card::before,
+  .process .timeline-card::after,
+  .process .timeline-card:nth-child(5)::after {
+    display: none;
+  }
+
+  .process .timeline-card:nth-child(n) {
+    grid-column: auto;
+    width: 100%;
+    transform: none;
+  }
+
+  .contacts .contacts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts .contact-panel,
+  .contacts .map-card {
+    min-height: auto;
+  }
+
+  .contacts .contact-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contacts .contact-actions .btn,
+  .contacts .contact-actions .btn-primary,
+  .contacts .contact-actions .btn:nth-child(2),
+  .contacts .contact-actions .btn:nth-child(3),
+  .contacts .contact-actions .btn:nth-child(4),
+  .contacts .contact-actions .btn:nth-child(5) {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 1280px) {
+  .site-header {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 12px;
+  }
+
+  .brand-copy small {
+    display: none;
+  }
+
+  .nav {
+    justify-content: center;
+    gap: 8px;
+    font-size: 11px;
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .valuation .quiz-actions {
+    gap: 12px;
+  }
+}
