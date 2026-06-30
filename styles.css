@@ -3989,7 +3989,7 @@ dd {
   box-shadow: inherit;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1680px) {
   .valuation .container {
     width: min(1540px, calc(100% - 80px));
   }
