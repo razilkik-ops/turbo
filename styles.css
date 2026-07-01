@@ -316,7 +316,8 @@ p {
   width: auto;
   height: 54px;
   max-height: 54px;
-  filter: sepia(1) saturate(1.8) hue-rotate(356deg) brightness(1.05);
+  object-fit: contain;
+  filter: none;
 }
 
 .nav {
